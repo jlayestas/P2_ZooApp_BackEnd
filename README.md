@@ -15,7 +15,7 @@ PostGreSQL for persistence<BR>
 API built with Java 8 and Spring 5<BR>
 UI built with HTML, CSS, and JavaScript<BR>
   
-FRAMEOWORKS<BR>
+FRAMEWORKS<BR>
 
 Java API will leverage the Spring Framework<BR>
 Java API will use Spring Data JPA to communicate with the DB<BR>
