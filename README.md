@@ -47,7 +47,7 @@ Visitors User Story<BR>
 -	A Visitor can view all animals in zoo<BR>
 -	A Visitor can view animal by name<BR>
 <BR>
-Tables<BR>
+Tables<BR><BR>
 Users<BR>
 o	User Id<BR>
 o	Username<BR>
@@ -57,7 +57,7 @@ o	Last Name<BR>
 o	Email<BR>
 o	User role<BR>
 <BR>
-User Role<BR><BR>
+User Role<BR>
 o	User Role Id<BR>
 o	User role<BR>
 <BR>
@@ -68,7 +68,7 @@ o	Habitat Type Id<BR>
 o	Lifespan<BR>
 o	Diet<BR>
 <BR>
-Habitat Type<BR><BR> 
+Habitat Type<BR>
 o	Habitat Type Id<BR>
 o	Habitat Name<BR>
 
