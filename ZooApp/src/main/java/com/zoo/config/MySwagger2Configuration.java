@@ -1,4 +1,4 @@
-package com.revature.config;
+package com.zoo.config;
 
 import java.util.Collections;
 
