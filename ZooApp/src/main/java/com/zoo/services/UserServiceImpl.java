@@ -19,9 +19,20 @@ public class UserServiceImpl implements UserService {
 		return (pk > 0) ? true : false;
 	}
 	
+	@Autowired
+	public UserServiceImpl(UserRepository udao) {
+		this.urepo = udao;
+	}
+
 	@Override
 	public boolean editUser(User user) {
-		return urepo.update(user.getFirstName(), user.getLastName(), user.getEmail(), user.getUserId());
+		//return urepo.update(user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword(), user.getUserId());
+		User target = urepo.findById(user.getUserId());
+		target.setFirstName(user.getFirstName());
+		target.setLastName(user.getLastName());
+		target.setEmail(user.getEmail());
+		target.setPassword(user.getPassword());
+		return (urepo.save(target) != null) ? true : false;
 	}
 
 	@Override

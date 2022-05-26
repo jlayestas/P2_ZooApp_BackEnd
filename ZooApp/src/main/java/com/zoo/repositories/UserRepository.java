@@ -12,8 +12,8 @@ import com.zoo.models.User;
 @Transactional
 public interface UserRepository extends JpaRepository<User, Integer>{
 	
-	@Query(value="UPDATE user SET u_first_name=?1, u_last_name=?2, u_email=?3 WHERE u_id=>4", nativeQuery=true)
-	public boolean update(String firstName, String lastNAme, String Email, int id);
+	@Query(value="UPDATE user SET u_first_name=?1, u_last_name=?2, u_email=?3, u_password=?4 WHERE u_id=?5", nativeQuery=true)
+	public boolean update(String firstName, String lastName, String email, String password, int id);
 	
 	@Query(value="SELECT * FROM username WHERE u_id=?1", nativeQuery=true)
 	public User findById(int id);
