@@ -1,9 +1,15 @@
 package com.zoo.controller;
 
 import java.util.List;
+
+import static com.zoo.util.ClientMessageUtil.CREATION_FAILED;
+import static com.zoo.util.ClientMessageUtil.CREATION_SUCCESSFUL;
+import static com.zoo.util.ClientMessageUtil.DELETION_FAILED;
+import static com.zoo.util.ClientMessageUtil.DELETION_SUCCESSFUL;
+import static com.zoo.util.ClientMessageUtil.UPDATE_FAILED;
+import static com.zoo.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
+
 import org.apache.log4j.Logger;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -59,7 +65,7 @@ public class AnimalsController {
 	
 	@PutMapping("/animals")
 	@ApiOperation(value="Update animal entity")
-	public @ResponseBody ClientMessage updateCandy(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage updateAnimals(@RequestBody Animals animals) {
 		
 		log.info("updating an animal in controller...");
 		return aserv.updateAnimals(animals) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
