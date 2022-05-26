@@ -1,15 +1,9 @@
-package com.revature.controller;
+package com.zoo.controller;
 
 import java.util.List;
-
-import static com.revature.util.AnimalsClientMessageUtil.CREATION_FAILED;
-import static com.revature.util.AnimalsClientMessageUtil.CREATION_SUCCESSFUL;
-import static com.revature.util.AnimalsClientMessageUtil.DELETION_FAILED;
-import static com.revature.util.AnimalsClientMessageUtil.DELETION_SUCCESSFUL;
-import static com.revature.util.AnimalsClientMessageUtil.UPDATE_FAILED;
-import static com.revature.util.AnimalsClientMessageUtil.UPDATE_SUCCESSFUL;
-
 import org.apache.log4j.Logger;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.models.Animals;
-import com.revature.models.AnimalsClientMessage;
-import com.revature.services.AnimalsService;
+import com.zoo.models.Animals;
+import com.zoo.models.ClientMessage;
+import com.zoo.services.AnimalsService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -57,7 +51,7 @@ public class AnimalsController {
 	
 	@PostMapping("/animals")
 	@ApiOperation(value="Create new animal entity")
-	public @ResponseBody AnimalsClientMessage createAnimals(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage createAnimals(@RequestBody Animals animals) {
 		
 		log.info("creating a new animal in controller...");
 		return aserv.createAnimal(animals) ? CREATION_SUCCESSFUL : CREATION_FAILED;
@@ -65,7 +59,7 @@ public class AnimalsController {
 	
 	@PutMapping("/animals")
 	@ApiOperation(value="Update animal entity")
-	public @ResponseBody AnimalsClientMessage updateCandy(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage updateCandy(@RequestBody Animals animals) {
 		
 		log.info("updating an animal in controller...");
 		return aserv.updateAnimals(animals) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
@@ -73,7 +67,7 @@ public class AnimalsController {
 	
 	@DeleteMapping("/animals")
 	@ApiOperation(value="Remove animal entity")
-	public @ResponseBody AnimalsClientMessage deleteCandy(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage deleteCandy(@RequestBody Animals animals) {
 		
 		log.info("deleting an animal in controller...");
 		return aserv.deleteAnimals(animals) ? DELETION_SUCCESSFUL : DELETION_FAILED;
