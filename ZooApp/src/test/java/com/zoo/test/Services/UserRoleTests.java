@@ -9,6 +9,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -17,17 +18,47 @@ import org.mockito.junit.MockitoJUnitRunner;
 import com.zoo.models.UserRole;
 import com.zoo.repositories.UserRoleRepository;
 import com.zoo.services.UserRoleServices;
+import com.zoo.services.UserRolesServicesImpl;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserRoleTests {
 
+/*
+ * methods to test:
+ * @Override
+	public boolean createRole(UserRole userRole) {
+		int pk = rRepo.save(userRole).getId();
+		return (pk > 0) ? true : false;
+	}
+
+	@Override
+	public UserRole getRoleById(int id) {
+		return rRepo.findById(id);
+	}
+
+	@Override
+	public List<UserRole> getAllRoles() {
+		return rRepo.findAll();
+	}
+
+	@Override
+	public boolean updateRole(UserRole userRole) {
+		return rRepo.update(userRole.getRole(), userRole.getId());
+	}
+
+	@Override
+	public boolean deleteUserRole(UserRole userRole) {
+		return rRepo.delete(userRole.getId());
+	}
+ * */
 	
 	@Mock
 	private UserRoleRepository userRepo;
-	@Mock
-	private UserRoleServices service;
+	@InjectMocks
+	private UserRolesServicesImpl service;
 	
 	private UserRole user = new UserRole(2, "user");
+	private UserRole updatedUser = new UserRole(2, "u");
 	private UserRole manager = new UserRole(1, "manager");
 	private UserRole notARole = new UserRole(3, "Bad Data");
 	
@@ -38,19 +69,21 @@ public class UserRoleTests {
 	public void setUp() {
 		mockDB.add(manager);
 		mockDB.add(user);
+		
 		MockitoAnnotations.initMocks(this);
-		Mockito.when(service.createRole(user)).thenReturn(true);
-		Mockito.when(service.getRoleById(user.getId())).thenReturn(user);
-		Mockito.when(service.getRoleById(notARole.getId())).thenReturn(null);
-		Mockito.when(service.getAllRoles()).thenReturn(mockDB);
-		Mockito.when(service.updateRole(new UserRole(user.getId(), "u"))).thenReturn(true);
-		Mockito.when(service.updateRole(new UserRole(notARole.getId(), "u"))).thenReturn(false);
-		Mockito.when(service.deleteUserRole(user)).thenReturn(true);
-		Mockito.when(service.deleteUserRole(notARole)).thenReturn(false);
+		
+		Mockito.when(userRepo.findById(user.getId())).thenReturn(user);
+		Mockito.when(userRepo.findAll()).thenReturn(mockDB);
+		Mockito.when(userRepo.save(user)).thenReturn(user);
+		Mockito.when(userRepo.update(updatedUser.getRole(), updatedUser.getId())).thenReturn(true);
+		Mockito.when(userRepo.update(notARole.getRole(), notARole.getId())).thenReturn(false);
+		Mockito.when(userRepo.delete(user.getId())).thenReturn(true);
+		Mockito.when(userRepo.delete(notARole.getId())).thenReturn(false);
 	}
 	
 	@Test
 	public void createUserRoleTest() {
+//		assertEquals(user.getId(), service.createRole(user));
 		assertTrue(service.createRole(user));
 	}
 	@Test
@@ -68,11 +101,11 @@ public class UserRoleTests {
 	}
 	@Test
 	public void updateUser() {
-		assertEquals(true, service.updateRole(new UserRole(user.getId(), "u")));
+		assertEquals(true, service.updateRole(updatedUser));
 	}
 	@Test
 	public void updateBadData() {
-		assertEquals(false, service.updateRole(new UserRole(notARole.getId(), "u")));
+		assertEquals(false, service.updateRole(notARole));
 	}
 	@Test
 	public void deleteUser() {
