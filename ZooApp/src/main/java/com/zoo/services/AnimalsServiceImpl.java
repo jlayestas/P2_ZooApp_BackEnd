@@ -17,6 +17,10 @@ public class AnimalsServiceImpl implements AnimalsService {
 	@Autowired
 	private AnimalsRepository arepo;
 	
+	public AnimalsServiceImpl(AnimalsRepository dao) {
+		this.arepo = dao;
+	}
+	
 	private static Logger log = Logger.getLogger(AnimalsServiceImpl.class);
 	
 	@Override
@@ -34,7 +38,6 @@ public class AnimalsServiceImpl implements AnimalsService {
 	log.info("In service layer, getting animal by id:" + id);
 	
 				System.out.println("ID: " + id);
-				//return crepo.findById(id).stream().findFirst().get();
 				return arepo.findById(id);
 	
 	}
