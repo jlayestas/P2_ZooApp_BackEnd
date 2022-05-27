@@ -2,7 +2,10 @@ package com.zoo.models;
 
 import java.util.Objects;
 
+
 import javax.persistence.*;
+
+import io.swagger.annotations.ApiModelProperty;
 
 
 @Entity
@@ -15,38 +18,42 @@ public class Animals {
 	private int id;
 	
 	@Column(name="a_name", unique=true, nullable=false)
-	private String name;
-	
-	@OneToOne
-	@JoinColumn(name="t_id", referencedColumnName = "t_id")
-	private HabitatType habitatType; 
+	private String name; 
 	
 	@Column(name="a_price", nullable=false)
 	private double lifespan;
 	
 	@Column(name="a_price", nullable=false)
 	private String diet;
+	
+	@OneToOne
+	@JoinColumn(name="a_habitatid", referencedColumnName = "t_id")
+	private HabitatType habitatType;
 
 	public Animals() {
 		super();
 	}
 
-	public Animals(String name, HabitatType habitatType, double lifespan, String diet) {
+
+	public Animals(String name, double lifespan, String diet, HabitatType habitatType) {
 		super();
 		this.name = name;
-		this.habitatType = habitatType;
 		this.lifespan = lifespan;
 		this.diet = diet;
+		this.habitatType = habitatType;
 	}
 
-	public Animals(int id, String name, HabitatType habitatType, double lifespan, String diet) {
+
+
+	public Animals(int id, String name, double lifespan, String diet, HabitatType habitatType) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.habitatType = habitatType;
 		this.lifespan = lifespan;
 		this.diet = diet;
+		this.habitatType = habitatType;
 	}
+
 
 	public int getId() {
 		return id;
@@ -56,7 +63,6 @@ public class Animals {
 		this.id = id;
 	}
 
-	
 	public String getName() {
 		return name;
 	}
@@ -65,12 +71,12 @@ public class Animals {
 		this.name = name;
 	}
 
-	public HabitatType getHabitatType() {
+	public HabitatType getHabitatId() {
 		return habitatType;
 	}
 
-	public void setHabitatType(HabitatType habitatType) {
-		this.habitatType = habitatType;
+	public void setHabitatId(HabitatType habitatId) {
+		this.habitatType = habitatId;
 	}
 
 	public double getLifespan() {
@@ -110,8 +116,16 @@ public class Animals {
 
 	@Override
 	public String toString() {
-		return "Animals [id=" + id + ", name=" + name + ", habitatType=" + habitatType + ", lifespan=" + lifespan
+		return "Animals [id=" + id + ", name=" + name + ", habitatId=" + habitatType + ", lifespan=" + lifespan
 				+ ", diet=" + diet + "]";
 	}
+	
+	
+
+
+
+
+
+	
 
 }

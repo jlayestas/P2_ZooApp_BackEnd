@@ -1,9 +1,15 @@
 package com.zoo.controller;
 
 import java.util.List;
+
+import static com.zoo.util.ClientMessageUtil.CREATION_FAILED;
+import static com.zoo.util.ClientMessageUtil.CREATION_SUCCESSFUL;
+import static com.zoo.util.ClientMessageUtil.DELETION_FAILED;
+import static com.zoo.util.ClientMessageUtil.DELETION_SUCCESSFUL;
+import static com.zoo.util.ClientMessageUtil.UPDATE_FAILED;
+import static com.zoo.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
+
 import org.apache.log4j.Logger;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,7 +38,7 @@ public class AnimalsController {
 	@Autowired
 	private AnimalsService aserv;
 
-	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific candy from the API", response = Animals.class)
+	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific animal from the API", response = Animals.class)
 	 @GetMapping(path = "/animals") 
 	 public @ResponseBody Animals getById(@RequestParam(value = "id", name = "id") int id) { 
 		 
@@ -59,7 +65,7 @@ public class AnimalsController {
 	
 	@PutMapping("/animals")
 	@ApiOperation(value="Update animal entity")
-	public @ResponseBody ClientMessage updateCandy(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage updateAnimals(@RequestBody Animals animals) {
 		
 		log.info("updating an animal in controller...");
 		return aserv.updateAnimals(animals) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
@@ -67,7 +73,7 @@ public class AnimalsController {
 	
 	@DeleteMapping("/animals")
 	@ApiOperation(value="Remove animal entity")
-	public @ResponseBody ClientMessage deleteCandy(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage deleteAnimals(@RequestBody Animals animals) {
 		
 		log.info("deleting an animal in controller...");
 		return aserv.deleteAnimals(animals) ? DELETION_SUCCESSFUL : DELETION_FAILED;
