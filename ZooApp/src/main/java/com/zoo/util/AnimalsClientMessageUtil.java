@@ -1,12 +1,12 @@
-package com.revature.util;
+package com.zoo.util;
 
-import com.revature.models.AnimalsClientMessage;
+import com.zoo.models.ClientMessage;
 
 public class AnimalsClientMessageUtil {
-	public static final AnimalsClientMessage CREATION_SUCCESSFUL = new AnimalsClientMessage("REGISTATION SUCCESSFUL");
-	public static final AnimalsClientMessage CREATION_FAILED = new AnimalsClientMessage("SOMETHING WENT WRONG DURING CREATION");
-	public static final AnimalsClientMessage UPDATE_SUCCESSFUL = new AnimalsClientMessage("UPDATE SUCCESSFUL");
-	public static final AnimalsClientMessage UPDATE_FAILED = new AnimalsClientMessage("SOMETHING WENT WRONG DURING UPDATE");
-	public static final AnimalsClientMessage DELETION_SUCCESSFUL = new AnimalsClientMessage("DELETION SUCCESSFUL");
-	public static final AnimalsClientMessage DELETION_FAILED = new AnimalsClientMessage("SOMETHING WENT WRONG DURING DELETION");
+	public static final ClientMessage CREATION_SUCCESSFUL = new ClientMessage("REGISTATION SUCCESSFUL");
+	public static final ClientMessage CREATION_FAILED = new ClientMessage("SOMETHING WENT WRONG DURING CREATION");
+	public static final ClientMessage UPDATE_SUCCESSFUL = new ClientMessage("UPDATE SUCCESSFUL");
+	public static final ClientMessage UPDATE_FAILED = new ClientMessage("SOMETHING WENT WRONG DURING UPDATE");
+	public static final ClientMessage DELETION_SUCCESSFUL = new ClientMessage("DELETION SUCCESSFUL");
+	public static final ClientMessage DELETION_FAILED = new ClientMessage("SOMETHING WENT WRONG DURING DELETION");
 }
