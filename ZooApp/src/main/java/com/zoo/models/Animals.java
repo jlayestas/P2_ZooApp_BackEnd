@@ -119,6 +119,7 @@ public class Animals {
 		return "Animals [id=" + id + ", name=" + name + ", habitatId=" + habitatType + ", lifespan=" + lifespan
 				+ ", diet=" + diet + "]";
 	}
+<<<<<<< HEAD
 	
 	
 
@@ -126,6 +127,8 @@ public class Animals {
 
 
 
+=======
+>>>>>>> 118f6a226638edb87ab714e3b99060d5ae083f32
 	
 
 }

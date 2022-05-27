@@ -5,7 +5,11 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+<<<<<<< HEAD
 import com.zoo.models.*;
+=======
+import com.zoo.models.Animals;
+>>>>>>> 118f6a226638edb87ab714e3b99060d5ae083f32
 
 @Repository
 @Transactional
