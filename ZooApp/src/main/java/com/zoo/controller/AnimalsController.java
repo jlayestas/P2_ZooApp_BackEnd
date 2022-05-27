@@ -38,7 +38,7 @@ public class AnimalsController {
 	@Autowired
 	private AnimalsService aserv;
 
-	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific candy from the API", response = Animals.class)
+	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific animal from the API", response = Animals.class)
 	 @GetMapping(path = "/animals") 
 	 public @ResponseBody Animals getById(@RequestParam(value = "id", name = "id") int id) { 
 		 
@@ -73,7 +73,7 @@ public class AnimalsController {
 	
 	@DeleteMapping("/animals")
 	@ApiOperation(value="Remove animal entity")
-	public @ResponseBody ClientMessage deleteCandy(@RequestBody Animals animals) {
+	public @ResponseBody ClientMessage deleteAnimals(@RequestBody Animals animals) {
 		
 		log.info("deleting an animal in controller...");
 		return aserv.deleteAnimals(animals) ? DELETION_SUCCESSFUL : DELETION_FAILED;
