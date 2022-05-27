@@ -73,15 +73,13 @@ public class AnimalsController {
 	
 	@DeleteMapping("/animals")
 	@ApiOperation(value="Remove animal entity")
-<<<<<<< HEAD
+
+
+
 	public @ResponseBody ClientMessage deleteAnimals(@RequestBody Animals animals) {
-=======
-	public @ResponseBody ClientMessage deleteCandy(@RequestBody Animals animals) {
->>>>>>> 118f6a226638edb87ab714e3b99060d5ae083f32
-		
+
 		log.info("deleting an animal in controller...");
 		return aserv.deleteAnimals(animals) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
-	
 	
 }
