@@ -1,4 +1,4 @@
-package com.revature.services;
+package com.zoo.services;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.revature.models.Animals;
-import com.revature.repositories.AnimalsRepository;
+import com.zoo.models.Animals;
+import com.zoo.repositories.AnimalsRepository;
 
 @Service
 @Transactional
@@ -16,6 +16,10 @@ public class AnimalsServiceImpl implements AnimalsService {
 	
 	@Autowired
 	private AnimalsRepository arepo;
+	
+	public AnimalsServiceImpl(AnimalsRepository dao) {
+		this.arepo = dao;
+	}
 	
 	private static Logger log = Logger.getLogger(AnimalsServiceImpl.class);
 	
@@ -34,7 +38,6 @@ public class AnimalsServiceImpl implements AnimalsService {
 	log.info("In service layer, getting animal by id:" + id);
 	
 				System.out.println("ID: " + id);
-				//return crepo.findById(id).stream().findFirst().get();
 				return arepo.findById(id);
 	
 	}

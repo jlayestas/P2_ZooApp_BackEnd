@@ -1,8 +1,8 @@
-package com.revature.services;
+package com.zoo.services;
 
 import java.util.List;
 
-import com.revature.models.Animals;
+import com.zoo.models.Animals;
 
 public interface AnimalsService {
 	
