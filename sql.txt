@@ -1,0 +1,37 @@
+create table Animals (
+	id serial constraint  a_id primary key,
+	a_name varchar(25) not null
+	lifespan numeric(7, 2) default 0,
+    diet varchar(25) not null
+);
+
+create table User (
+	id serial constraint  u_id primary key,
+    u_username varchar(25) not null
+    u_password varchar(25) not null
+    u_first_name varchar(25) not null
+    u_last_name varchar(25) not null
+    u_email varchar(25) not null
+	
+	
+	
+);
+
+create table habitat_type (
+	
+	
+	
+);
+
+create table user_roles (
+	
+	
+	
+);
+
+
+
+ALTER TABLE ERS_REIMBURSEMENT
+ADD CONSTRAINT ERS_USERS_FK_AUTH
+FOREIGN KEY (REIMB_AUTHOR)
+REFERENCES ERS_USERS

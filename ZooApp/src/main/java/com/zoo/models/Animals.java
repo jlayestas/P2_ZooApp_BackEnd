@@ -116,16 +116,9 @@ public class Animals {
 
 	@Override
 	public String toString() {
+		
 		return "Animals [id=" + id + ", name=" + name + ", habitatId=" + habitatType + ", lifespan=" + lifespan
 				+ ", diet=" + diet + "]";
 	}
 	
-	
-
-
-
-
-
-	
-
 }
