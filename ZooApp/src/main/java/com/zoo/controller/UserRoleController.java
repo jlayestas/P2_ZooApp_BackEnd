@@ -70,7 +70,7 @@ public class UserRoleController {
 	}
 
 	@DeleteMapping("/userRole")
-	@ApiOperation("delete user roel entity")
+	@ApiOperation("delete user role entity")
 	public @ResponseBody ClientMessage deleteUser(@RequestBody UserRole role) {
 		return userv.deleteUserRole(role) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
