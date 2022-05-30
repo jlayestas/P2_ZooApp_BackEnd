@@ -14,12 +14,12 @@ import com.zoo.models.UserRole;
 public interface UserRoleRepository extends JpaRepository<UserRole, Integer> {
 
 
-	@Query(value="UPDATE user_roles SET u_role=?1 r_id=?2", nativeQuery = true)
-	public boolean update(String role, int id);
+	@Query(value="UPDATE user_roles SET r_role=?1 WHERE r_id=?2 RETURNING *", nativeQuery = true)
+	public UserRole update(String role, int id);
 	
-	@Query(value="SELECT * FROM user_roles where r_id=?1", nativeQuery = true)
+	@Query(value="SELECT * FROM user_roles WHERE r_id=?1", nativeQuery = true)
 	public UserRole findById(int id);
 	
-	@Query(value="DELETE FROM user_roles WHERE r_id=?1", nativeQuery = true)
-	public boolean delete(int id);
+//	@Query(value="DELETE FROM user_roles WHERE r_id=?1", nativeQuery = true)
+//	public boolean delete(int id);
 }

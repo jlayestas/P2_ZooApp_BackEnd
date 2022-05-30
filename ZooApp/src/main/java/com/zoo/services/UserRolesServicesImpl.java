@@ -42,13 +42,18 @@ public class UserRolesServicesImpl implements UserRoleServices {
 	@Override
 	public boolean updateRole(UserRole userRole) {
 		log.info("In service layer, trying to update user role id# " + userRole.getId() + " to: " + userRole);
-		return rRepo.update(userRole.getRole(), userRole.getId());
+		if(rRepo.update(userRole.getRole(), userRole.getId()).equals(userRole)) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	@Override
 	public boolean deleteUserRole(UserRole userRole) {
 		log.info("In service layer, trying to delete user role: " + userRole);
-		return rRepo.delete(userRole.getId());
+		rRepo.delete(userRole);
+		return true;
 	}
 
 }

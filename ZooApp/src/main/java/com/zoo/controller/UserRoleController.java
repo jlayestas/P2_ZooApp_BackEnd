@@ -54,8 +54,8 @@ public class UserRoleController {
 	
 	@GetMapping("/GetRole")
 	@ApiOperation("get a user role")
-	public @ResponseBody UserRole getUserRole(@RequestBody UserRole role) {
-		return userv.getRoleById(role.getId());
+	public @ResponseBody UserRole getUserRole(@RequestBody int id) {
+		return userv.getRoleById(id);
 	}
 
 	@GetMapping("/GetRoles")
@@ -72,6 +72,7 @@ public class UserRoleController {
 	@DeleteMapping("/DeleteRole")
 	@ApiOperation("delete user role entity")
 	public @ResponseBody ClientMessage deleteUser(@RequestBody UserRole role) {
+	
 		return userv.deleteUserRole(role) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
 }
