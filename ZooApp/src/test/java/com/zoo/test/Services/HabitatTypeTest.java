@@ -28,7 +28,7 @@ public class HabitatTypeTest {
 	private static HabitatTypeServiceImpl service;
 	
 	private HabitatType type = new HabitatType(2, "South America");
-	private HabitatType updateHType = new HabitatType(2, "Sou");
+	private HabitatType updateHType = new HabitatType(1, "Sou");
 	private HabitatType notAType = new HabitatType(3,"Bad Data");
 	
 	List<HabitatType> mockDB = new ArrayList<>();
@@ -43,8 +43,8 @@ public class HabitatTypeTest {
 		Mockito.when(typeRepo.findByName(type.getName())).thenReturn(type);
 		Mockito.when(typeRepo.findAll()).thenReturn(mockDB);
 		Mockito.when(typeRepo.save(type)).thenReturn(type);
-//		Mockito.when(typeRepo.update(updateHType.getName(), updateHType.getId())).thenReturn(true);
-//		Mockito.when(typeRepo.update(updateHType.getName(), updateHType.getId())).thenReturn(false);
+		Mockito.when(typeRepo.update(updateHType.getName(), updateHType.getId())).thenReturn(true);
+//		Mockito.when(typeRepo.update(notAType.getName(), updateHType.getId())).thenReturn(false);
 		Mockito.when(typeRepo.delete(type.getId())).thenReturn(true);
 		Mockito.when(typeRepo.delete(notAType.getId())).thenReturn(false);
 	}
@@ -69,11 +69,11 @@ public class HabitatTypeTest {
 		assertEquals(mockDB, service.getAllTypes());
 	}
 	
-//	@Test
-//	public void updateHabitatType() {
-//		assertEquals(true, service.updateType(updateHType));
-//	}
-//	
+	@Test
+	public void updateHabitatType() {
+		assertEquals(true, service.updateType(updateHType));
+	}
+	
 //	@Test
 //	public void updateBadData() {
 //		assertEquals(false, service.updateType(notAType));
