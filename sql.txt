@@ -18,20 +18,27 @@ create table User (
 );
 
 create table habitat_type (
-	
+	id serial constraint  t_id primary key,
+    t_name varchar(25) not null
+    
 	
 	
 );
 
 create table user_roles (
-	
+	id serial constraint  r_id primary key,
+    r_role varchar(25) not null
 	
 	
 );
 
 
+ALTER TABLE USERS
+ADD CONSTRAINT user_role_FK
+FOREIGN KEY (id)
+REFERENCES user_roles
 
-ALTER TABLE ERS_REIMBURSEMENT
-ADD CONSTRAINT ERS_USERS_FK_AUTH
-FOREIGN KEY (REIMB_AUTHOR)
-REFERENCES ERS_USERS
+ALTER TABLE Animals
+ADD CONSTRAINT habitat_id_FK
+FOREIGN KEY (id)
+REFERENCES habitat_type

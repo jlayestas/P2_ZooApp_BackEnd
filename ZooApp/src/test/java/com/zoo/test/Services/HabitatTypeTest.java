@@ -1,13 +1,18 @@
 package com.zoo.test.Services;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.zoo.models.HabitatType;
@@ -18,33 +23,69 @@ import com.zoo.services.HabitatTypeServiceImpl;
 public class HabitatTypeTest {
 	
 	@Mock
-	private HabitatTypeRepository typeRepo;
+	private static HabitatTypeRepository typeRepo;
 	@InjectMocks
-	private HabitatTypeServiceImpl service;
+	private static HabitatTypeServiceImpl service;
 	
-	private static HabitatType t1, t2;
-	static List<HabitatType> dummyDb;
+	private HabitatType type = new HabitatType(2, "South America");
+	private HabitatType updateHType = new HabitatType(1, "Sou");
+	private HabitatType notAType = new HabitatType(3,"Bad Data");
 	
-	@BeforeAll
-	static void setUpBeforeClass() {
-		typeRepo = Mockito.mock(HabitatTypeRepository.class);
+	List<HabitatType> mockDB = new ArrayList<>();
+	
+	@SuppressWarnings("deprecation")
+	@Before
+	public void setUp() {
+		mockDB.add(type);
 		
-		service = new HabitatTypeServiceImpl(typeRepo);
+		MockitoAnnotations.initMocks(this);
 		
-		t1 = new HabitatType(1, "Aferica");
-		t2 = new HabitatType(2, "South America");
-		
-		dummyDb = new ArrayList<HabitatType>();
-		dummyDb.add(t1);
-		dummyDb.add(t2);
+		Mockito.when(typeRepo.findByName(type.getName())).thenReturn(type);
+		Mockito.when(typeRepo.findAll()).thenReturn(mockDB);
+		Mockito.when(typeRepo.save(type)).thenReturn(type);
+		Mockito.when(typeRepo.update(updateHType.getName(), updateHType.getId())).thenReturn(true);
+//		Mockito.when(typeRepo.update(notAType.getName(), updateHType.getId())).thenReturn(false);
+		Mockito.when(typeRepo.delete(type.getId())).thenReturn(true);
+		Mockito.when(typeRepo.delete(notAType.getId())).thenReturn(false);
 	}
 	
 	@Test
-	@Order(1)
-	@DisplayName("Create new HabitatType Test")
-	void 
+	public void createHabitatTypeTest() {
+		assertTrue(service.createType(type));
+	}
 	
-
+	@Test
+	public void getType() {
+		assertEquals(type, service.getTypeByName(type.getName()));
+	}
 	
-
+	@Test
+	public void getBadData() {
+		assertEquals(null, service.getTypeByName(notAType.getName()));
+	}
+	
+	@Test
+	public void getAll() {
+		assertEquals(mockDB, service.getAllTypes());
+	}
+	
+	@Test
+	public void updateHabitatType() {
+		assertEquals(true, service.updateType(updateHType));
+	}
+	
+//	@Test
+//	public void updateBadData() {
+//		assertEquals(false, service.updateType(notAType));
+//	}
+	
+	@Test
+	public void deleteType() {
+		assertEquals(true, service.deleteType(type));
+	}
+	
+	@Test
+	public void deleteBadData() {
+		assertEquals(false, service.deleteType(notAType));
+	}
 }
