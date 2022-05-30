@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 
 @Entity
-@Table(name="Animals")
+@Table(name="animals")
 public class Animals {
 	
 	@Id
