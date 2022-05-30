@@ -23,3 +23,35 @@
 2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
 2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
 2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]

@@ -27,6 +27,11 @@ public class HabitatType {
 	public int getId() {
 		return id;
 	}
+	
+//	public void setName(String string) {
+//		this.name = name;
+//		
+//	}
 
 	public HabitatType(String name) {
 		super();
@@ -66,5 +71,7 @@ public class HabitatType {
 		HabitatType other = (HabitatType) obj;
 		return id == other.id && Objects.equals(name, other.name);
 	}
+
+	
 
 }
