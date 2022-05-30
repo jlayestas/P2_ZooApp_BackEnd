@@ -1,16 +1,16 @@
 create table Animals (
 	id serial constraint  a_id primary key,
-	a_name varchar(25) not null
+	a_name varchar(25) not null,
 	lifespan numeric(7, 2) default 0,
     diet varchar(25) not null
 );
 
-create table User (
+create table users (
 	id serial constraint  u_id primary key,
-    u_username varchar(25) not null
-    u_password varchar(25) not null
-    u_first_name varchar(25) not null
-    u_last_name varchar(25) not null
+    u_username varchar(25) not null,
+    u_password varchar(25) not null,
+    u_first_name varchar(25) not null,
+    u_last_name varchar(25) not null,
     u_email varchar(25) not null
 	
 	
@@ -32,13 +32,18 @@ create table user_roles (
 	
 );
 
-
 ALTER TABLE USERS
 ADD CONSTRAINT user_role_FK
 FOREIGN KEY (id)
 REFERENCES user_roles
 
+ALTER TABLE USERS
+ADD CONSTRAINT a_id_FK
+FOREIGN KEY (id)
+REFERENCES Animals
+
 ALTER TABLE Animals
 ADD CONSTRAINT habitat_id_FK
 FOREIGN KEY (id)
 REFERENCES habitat_type
+
