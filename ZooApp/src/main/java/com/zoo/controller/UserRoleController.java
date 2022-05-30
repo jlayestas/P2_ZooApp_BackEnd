@@ -16,26 +16,26 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.zoo.models.Animals;
 import com.zoo.models.ClientMessage;
-import com.zoo.models.User;
 import com.zoo.models.UserRole;
 import com.zoo.services.UserRoleServices;
-import com.zoo.services.UserRolesServicesImpl;
-import com.zoo.services.UserService;
-
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
+@RestController
+@RequestMapping("/api")
+@Api(value= "UserRollController", description = "REST controller related to User Role Entities")
 public class UserRoleController {
 	
 	private static Logger log = Logger.getLogger(UserRoleController.class);
 	
 	@Autowired
 	private UserRoleServices userv;
-	
 	
 	
 	@ApiOperation(value="Create new user role with specified id number", notes="Provide an easy way to update the user role database")
