@@ -34,7 +34,7 @@ public class User {
 	private UserRole userRole;
 	
 	@ManyToOne
-	@JoinColumn(name="a_name", referencedColumnName ="a_name")
+	@JoinColumn(name="a_id", referencedColumnName ="a_id")
 	private Animals animalName;
 
 	public User() {

@@ -111,7 +111,7 @@ public class UserControllerTest {
 	@Test
 	@Order(2)
 	@DisplayName("2. Create User - Happy Path Scenerio Test")
-	public void testCreateUsery() throws Exception {
+	public void testCreateUser() throws Exception {
 		// id number of this creation should be 3
 		mockUserCreation.setUserId(3);
 		//tell Mockito the behavior that I want this method to act like in the mock environment
