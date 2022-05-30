@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table
+@Table(name="user")
 public class User {
 
 	@Id
@@ -32,6 +32,10 @@ public class User {
 	@ManyToOne
 	@JoinColumn(name="r_id", referencedColumnName = "r_id")
 	private UserRole userRole;
+	
+	@ManyToOne
+	@JoinColumn(name="a_name", referencedColumnName ="a_name")
+	private Animals animalName;
 
 	public User() {
 	}
