@@ -20,10 +20,10 @@ public class Animals {
 	@Column(name="a_name", unique=true, nullable=false)
 	private String name; 
 	
-	@Column(name="a_price", nullable=false)
+	@Column(name="a_lifespan", nullable=false)
 	private double lifespan;
 	
-	@Column(name="a_price", nullable=false)
+	@Column(name="a_diet", nullable=false)
 	private String diet;
 	
 	@OneToOne
