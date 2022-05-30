@@ -31,12 +31,12 @@ public class User {
 	
 	@ManyToOne
 	@JoinColumn(name="r_id", referencedColumnName = "r_id")
-	private String userRole;
+	private UserRole userRole;
 
 	public User() {
 	}
 
-	public User(String username, String password, String firstName, String lastName, String email, String userRole) {
+	public User(String username, String password, String firstName, String lastName, String email, UserRole userRole) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -47,7 +47,7 @@ public class User {
 	}
 
 	public User(int userId, String username, String password, String firstName, String lastName, String email,
-			String userRole) {
+			UserRole userRole) {
 		super();
 		this.userId = userId;
 		this.username = username;
@@ -106,11 +106,11 @@ public class User {
 		this.email = email;
 	}
 
-	public String getUserRole() {
+	public UserRole getUserRole() {
 		return userRole;
 	}
 
-	public void setUserRole(String userRole) {
+	public void setUserRole(UserRole userRole) {
 		this.userRole = userRole;
 	}
 

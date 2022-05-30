@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import com.zoo.models.Animals;
 import com.zoo.models.User;
 
 @Repository
@@ -20,5 +21,8 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 	
 	@Query(value="SELECT * FROM user WHERE u_username=?1, u_password=?2", nativeQuery=true)
 	public User userLogin (String username, String password);
+	
+	@Query(value="SELECt * FROM animal name WHERE a_name=?1", nativeQuery=true)
+	public Animals findAnimals(String Aname);
 }
 

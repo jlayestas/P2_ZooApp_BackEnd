@@ -1,5 +1,6 @@
 package com.zoo.services;
 
+import com.zoo.models.Animals;
 import com.zoo.models.User;
 
 public interface UserService {
@@ -8,6 +9,8 @@ public interface UserService {
 	
 	//find username by id number
 	public User findUsernameById(int id);
+	
+	public Animals findAnimalsByName(String name);
 	
 	//update info
 	public boolean editUser(User user);

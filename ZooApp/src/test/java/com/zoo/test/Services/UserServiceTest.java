@@ -21,8 +21,13 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import com.zoo.models.Animals;
+import com.zoo.models.HabitatType;
 import com.zoo.models.User;
+import com.zoo.models.UserRole;
+import com.zoo.repositories.AnimalsRepository;
 import com.zoo.repositories.UserRepository;
+import com.zoo.services.AnimalsServiceImpl;
 import com.zoo.services.UserServiceImpl;
 
 
@@ -41,6 +46,16 @@ public class UserServiceTest {
 	private static User u1, u2;
 	static List<User> dummyDb;
 	
+	//For finding animal name
+	@Mock
+	private static AnimalsRepository arepo;
+	
+	@InjectMocks
+	private static AnimalsServiceImpl aserv;
+	
+	private static Animals a1;
+	static List<Animals> dummyDb1;
+	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		//arrange your tests with needed dependencies
@@ -52,12 +67,22 @@ public class UserServiceTest {
 		userv = new UserServiceImpl(udao);
 		
 		//user id, username, password, first name, last name, email, user role
-		u1 = new User(1, "CRock", "passWord", "Chris", "Rock", "CRock@gmail.com", "manager");
-		u2 = new User(2, "AHeard", "PooOnBed", "Amber", "Heard", "AHeard@gmail.com", "visitor");
+		u1 = new User(1, "CRock", "passWord", "Chris", "Rock", "CRock@gmail.com", new UserRole(1, "manager"));
+		u2 = new User(2, "AHeard", "PooOnBed", "Amber", "Heard", "AHeard@gmail.com", new UserRole(2, "visitor"));
+	
 		
 		dummyDb = new ArrayList<User>();;
 		dummyDb.add(u1);
 		dummyDb.add(u2);
+		
+		//for finding an animal name
+		arepo = Mockito.mock(AnimalsRepository.class);
+		
+		aserv = new AnimalsServiceImpl(arepo);
+		
+		a1 = new Animals(1, "Lion", 50, "Carnivore", new HabitatType(1, "Africa"));
+		dummyDb1 = new ArrayList<Animals>();
+		dummyDb1.add(a1);
 	}
 	
 	@Test
@@ -73,7 +98,7 @@ public class UserServiceTest {
 	@DisplayName("2. Create User Happy Path Test")
 	void testCreateUser() {
 		//arrange step
-		User u3 = new User("AHeard", "PooOnBed", "Amber", "Heard", "AHeard@gmail.com", "visitor");
+		User u3 = new User("AHeard", "PooOnBed", "Amber", "Heard", "AHeard@gmail.com", new UserRole(2, "visitor"));
 		u3.setUserId(3);
 		
 		//here we will tell mockito what type of behavior to expect from calling certain methods from our dao
@@ -133,7 +158,18 @@ public class UserServiceTest {
 	
 	@Test
 	@Order(7)
-	@DisplayName("7. Unneccessay/Unused Test")
+	@DisplayName("7. Get Animal name by Id Happy Path Test")
+	void testFindAnimalByName() {
+		//arrange step
+		when(userv.findAnimalsByName("Lion")).thenReturn((a1));
+		
+		//act + assert step
+		assertEquals(a1, userv.findAnimalsByName("Lion"));
+	}
+	
+	@Test
+	@Order(8)
+	@DisplayName("8. Unneccessay/Unused Test")
 	@Disabled("Disabled until CreateUser is up!") 
 	// @Disabled will allow you to ignore this test while debugging other tests
 	public void unusedTest() {

@@ -13,3 +13,13 @@
 2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
 2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
 2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion

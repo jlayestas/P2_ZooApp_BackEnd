@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.zoo.models.Animals;
 import com.zoo.models.ClientMessage;
 import com.zoo.models.User;
 import com.zoo.services.UserService;
@@ -33,7 +34,7 @@ public class UserController {
 	private UserService userv;
 	
 	@ApiOperation(value="User login with username and password", notes="Provide username and password to login", response= User.class)
-	@GetMapping(path = "/user")
+	@GetMapping(path = "/login")
 	public @ResponseBody User userLogin(@RequestParam(value="username, password", name="username, password") String username, String password){
 		return userv.login(username, password);
 	}
@@ -44,6 +45,14 @@ public class UserController {
 		System.out.println("TEST: " + userv.findUsernameById(id));
 		return userv.findUsernameById(id);
 	}
+	
+	@ApiOperation(value="Find animal by name", notes="Provide an animal name to look up a specific animal from the API", response = Animals.class)
+	@GetMapping(path = "/animals")
+	public @ResponseBody Animals getAnimalName (@RequestParam(value="name", name="name") String name) {
+		System.out.println("TEST: " + userv.findAnimalsByName(name));
+		return userv.findAnimalsByName(name);
+	}
+	
 	
 	@GetMapping("/users")
 	@ApiOperation("create new user entity")
