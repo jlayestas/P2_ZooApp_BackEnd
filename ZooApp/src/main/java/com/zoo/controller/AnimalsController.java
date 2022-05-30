@@ -39,7 +39,7 @@ public class AnimalsController {
 	private AnimalsService aserv;
 
 	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific animal from the API", response = Animals.class)
-	 @GetMapping(path = "/animals") 
+	 @GetMapping(path = "/id") 
 	 public @ResponseBody Animals getById(@RequestParam(value = "id", name = "id") int id) { 
 		 
 		 log.info("finding animal by Id in controller...");

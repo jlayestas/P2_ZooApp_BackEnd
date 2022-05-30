@@ -37,7 +37,7 @@ public class HabitatTypeController {
 	private HabitatTypeService typev;
 	
 	@ApiOperation(value="Find animal by name", notes="Provide a name to lookup a specific habitatType from the API", response = HabitatType.class)
-	@GetMapping(path = "/animals/type")
+	@GetMapping(path = "/type")
 	public @ResponseBody HabitatType getByName(@RequestParam(value = "name", name = "name")String name) {
 		
 		log.info("finding habitat type by name in controller...");
@@ -45,7 +45,7 @@ public class HabitatTypeController {
 		return typev.getTypeByName(name);
 	}
 	
-	@GetMapping("/animals/type")
+	@GetMapping("/all")
 	@ApiOperation(value="find all habitatTypes")
 	public @ResponseBody List<HabitatType> getAll(){
 		

@@ -26,7 +26,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/users")
 @Api(value= "UserRestController", description = "REST controller related to User Entities")
 public class UserController {
 	
