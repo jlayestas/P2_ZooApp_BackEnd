@@ -55,24 +55,27 @@ public class UserRoleController {
 	@GetMapping("/GetRole")
 	@ApiOperation("get a user role")
 	public @ResponseBody UserRole getUserRole(@RequestBody int id) {
+		log.info("getting user role id#" + id);
 		return userv.getRoleById(id);
 	}
 
 	@GetMapping("/GetRoles")
-	@ApiOperation("get a user role")
+	@ApiOperation("get all user roles")
 	public @ResponseBody List<UserRole> getAllUserRoles() {
+		log.info("getting all user roles");
 		return userv.getAllRoles();
 	}
 	@PutMapping("/UpdateRole")
 	@ApiOperation("update user role entity")
 	public @ResponseBody ClientMessage editUserRole(@RequestBody UserRole role) {
+		log.info("updating a user role");
 		return userv.updateRole(role)? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	}
 
 	@DeleteMapping("/DeleteRole")
 	@ApiOperation("delete user role entity")
 	public @ResponseBody ClientMessage deleteUser(@RequestBody UserRole role) {
-	
+		log.info("deleting a user role");
 		return userv.deleteUserRole(role) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
 }

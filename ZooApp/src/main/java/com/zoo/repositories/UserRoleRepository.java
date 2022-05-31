@@ -13,13 +13,15 @@ import com.zoo.models.UserRole;
 @Transactional
 public interface UserRoleRepository extends JpaRepository<UserRole, Integer> {
 
-
-	@Query(value="UPDATE user_roles SET r_role=?1 WHERE r_id=?2 RETURNING *", nativeQuery = true)
-	public UserRole update(String role, int id);
+	//RETURNING specifies what value this query will return
+	//Any query that is attached to a non-void function must return the appropriate value
+	//for this one and the delete, they return true to match the boolean value of their function
+	@Query(value="UPDATE user_roles SET r_role=?1 WHERE r_id=?2 RETURNING true", nativeQuery = true)
+	public boolean update(String role, int id);
 	
 	@Query(value="SELECT * FROM user_roles WHERE r_id=?1", nativeQuery = true)
 	public UserRole findById(int id);
 	
-//	@Query(value="DELETE FROM user_roles WHERE r_id=?1", nativeQuery = true)
-//	public boolean delete(int id);
+	@Query(value="DELETE FROM user_roles WHERE r_id=?1 RETURNING true", nativeQuery = true)
+	public boolean delete(int id);
 }

@@ -77,12 +77,12 @@ public class UserRoleTests {
 		Mockito.when(userRepo.findById(notARole.getId())).thenReturn(null);
 		Mockito.when(userRepo.findAll()).thenReturn(mockDB);
 		Mockito.when(userRepo.save(user)).thenReturn(user);
-//		Mockito.when(userRepo.update(updatedUser.getRole(), updatedUser.getId())).thenReturn(true);
-//		Mockito.when(userRepo.update(updatedManager.getRole(), updatedManager.getId())).thenReturn(true);
-//		Mockito.when(userRepo.update(notARole.getRole(), notARole.getId())).thenReturn(false);
-//		Mockito.when(userRepo.delete(user.getId())).thenReturn(true);
-//		Mockito.when(userRepo.delete(manager.getId())).thenReturn(true);
-//		Mockito.when(userRepo.delete(notARole.getId())).thenReturn(false);
+		Mockito.when(userRepo.update(updatedUser.getRole(), updatedUser.getId())).thenReturn(true);
+		Mockito.when(userRepo.update(updatedManager.getRole(), updatedManager.getId())).thenReturn(true);
+		Mockito.when(userRepo.update(notARole.getRole(), notARole.getId())).thenReturn(false);
+		Mockito.when(userRepo.delete(user.getId())).thenReturn(true);
+		Mockito.when(userRepo.delete(manager.getId())).thenReturn(true);
+		Mockito.when(userRepo.delete(notARole.getId())).thenReturn(false);
 	}
 	
 	@Test
@@ -103,28 +103,28 @@ public class UserRoleTests {
 	public void getAll() {
 		assertEquals(mockDB, service.getAllRoles());
 	}
-//	@Test
-//	public void updateUser() {
-//		assertEquals(true, service.updateRole(updatedUser));
-//	}
-//	@Test
-//	public void updateManager() {
-//		assertEquals(true, service.updateRole(updatedManager));
-//	}
-//	@Test
-//	public void updateBadData() {
-//		assertEquals(false, service.updateRole(notARole));
-//	}
-//	@Test
-//	public void deleteUser() {
-//		assertEquals(true, service.deleteUserRole(user));
-//	}
-//	@Test
-//	public void deleteManager() {
-//		assertEquals(true, service.deleteUserRole(manager));
-//	}
-//	@Test
-//	public void deleteBadData() {
-//		assertEquals(false, service.deleteUserRole(notARole));
-//	}
+	@Test
+	public void updateUser() {
+		assertEquals(true, service.updateRole(updatedUser));
+	}
+	@Test
+	public void updateManager() {
+		assertEquals(true, service.updateRole(updatedManager));
+	}
+	@Test
+	public void updateBadData() {
+		assertEquals(false, service.updateRole(notARole));
+	}
+	@Test
+	public void deleteUser() {
+		assertEquals(true, service.deleteUserRole(user));
+	}
+	@Test
+	public void deleteManager() {
+		assertEquals(true, service.deleteUserRole(manager));
+	}
+	@Test
+	public void deleteBadData() {
+		assertEquals(false, service.deleteUserRole(notARole));
+	}
 }
