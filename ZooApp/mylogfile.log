@@ -132,3 +132,8 @@
 2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
 2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
 2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-01 10:08:47 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-01 10:08:47 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-06-01 14:29:01 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-01 14:29:01 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=manager]
+2022-06-01 14:50:56 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...

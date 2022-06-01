@@ -27,7 +27,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/habitatType")
 @Api(value= "HabitatTypeRestController", description = "REST controller related to Habitat Type Enteties")
 public class HabitatTypeController {
 	
@@ -53,12 +53,20 @@ public class HabitatTypeController {
 		return typev.getAllTypes();
 	}
 	
-	@PostMapping("/animals/type")
+	@PostMapping("/CreateById")
 	@ApiOperation(value="Create new habitatType")
-	public @ResponseBody ClientMessage createHabitatType(@RequestBody HabitatType habitatType){
+	public @ResponseBody ClientMessage createHabitatType(@RequestParam(value="id", name="id") int id, @RequestParam(value="name", name="name") String name) {
 		
-		log.info("creating new habitatType in controller..." + habitatType);
-		return typev.createType(habitatType) ? CREATION_SUCCESSFUL : CREATION_FAILED;
+		log.info("creating new habitatType in controller...");
+		return typev.createType(new HabitatType(name)) ? CREATION_SUCCESSFUL : CREATION_FAILED;
+	}
+	
+	@PostMapping("/CreateByName")
+	@ApiOperation(value="Create new habitatType by name")
+	public @ResponseBody ClientMessage createHabitatType(@RequestParam(value="name", name="name") String name) {
+		
+		log.info("creating habitat type");
+		return typev.createType(new HabitatType(name)) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
 	@PutMapping("/animals/type")
