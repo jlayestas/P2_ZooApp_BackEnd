@@ -11,7 +11,7 @@ public interface UserService {
 	public User findUsernameById(int id);
 	
 	//find animal name
-	public Animals findAnimalsByName(String name);
+	public Animals findAnimalsById(int AnimalId);
 	
 	//update info
 	public boolean editUser(User user);

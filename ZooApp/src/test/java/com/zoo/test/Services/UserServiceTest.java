@@ -158,13 +158,13 @@ public class UserServiceTest {
 	
 	@Test
 	@Order(7)
-	@DisplayName("7. Get Animal name by Id Happy Path Test")
-	void testFindAnimalByName() {
+	@DisplayName("7. Get Animal by Id Happy Path Test")
+	void testFindAnimalById() {
 		//arrange step
-		when(userv.findAnimalsByName("Lion")).thenReturn((a1));
+		when(userv.findAnimalsById(1)).thenReturn((a1));
 		
 		//act + assert step
-		assertEquals(a1, userv.findAnimalsByName("Lion"));
+		assertEquals(a1, userv.findAnimalsById(1));
 	}
 	
 	@Test
