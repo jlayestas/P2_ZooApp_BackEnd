@@ -89,7 +89,7 @@ class AnimalsTest {
 	
 	@Test
 	@Order(3)
-	@DisplayName("Get all Animals Test")
+	@DisplayName("Get all Animal Test")
 	void testGetAllAnimals() {
 		
 		when(aserv.getAllAnimals()).thenReturn(dummyDb);
@@ -101,7 +101,7 @@ class AnimalsTest {
 	
 	@Test
 	@Order(4)
-	@DisplayName("Update Animals Test")
+	@DisplayName("Update Animal Test")
 	void testUpdateCandy() {
 		a2.setName("Jorge");;
 		a2.setDiet("Carnivore");

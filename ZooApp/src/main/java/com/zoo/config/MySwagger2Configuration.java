@@ -21,7 +21,7 @@ public class MySwagger2Configuration {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.paths(PathSelectors.ant("/api/*"))
-				.apis(RequestHandlerSelectors.basePackage("com.revature"))
+				.apis(RequestHandlerSelectors.basePackage("com.zoo"))
 				.build()
 				.enableUrlTemplating(true)
 				.apiInfo(apiDetails());
