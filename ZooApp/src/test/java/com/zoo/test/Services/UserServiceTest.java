@@ -78,7 +78,7 @@ public class UserServiceTest {
 		//for finding an animal name
 		arepo = Mockito.mock(AnimalsRepository.class);
 		
-		aserv = new AnimalsServiceImpl(arepo);
+		//aserv = new AnimalsServiceImpl(arepo);
 		
 		a1 = new Animals(1, "Lion", 50, "Carnivore", new HabitatType(1, "Africa"));
 		dummyDb1 = new ArrayList<Animals>();
