@@ -69,19 +69,19 @@ public class HabitatTypeController {
 		return typev.createType(new HabitatType(name)) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
-	@PutMapping("/animals/type")
+	@PutMapping("/UpdateType")
 	@ApiOperation(value="Update habitat type entity")
-	public @ResponseBody ClientMessage updateType(@RequestBody HabitatType habitatType) {
+	public @ResponseBody ClientMessage editHabitatType(@RequestBody HabitatType name) {
 		
-		log.info("update habitat type " + habitatType);
-		return typev.updateType(habitatType) ? CREATION_SUCCESSFUL : CREATION_FAILED;
+		log.info("update habitat type " + name);
+		return typev.updateType(name) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
-	@DeleteMapping("/animals/type")
+	@DeleteMapping("/DeleteType")
 	@ApiOperation(value="Remove habitat type entity")
-	public @ResponseBody ClientMessage deleteType(@RequestBody HabitatType habitatType) {
+	public @ResponseBody ClientMessage deleteType(@RequestBody HabitatType name) {
 		
 		log.info("deleting an habitat type in controller...");
-		return typev.deleteType(habitatType) ? DELETION_SUCCESSFUL : DELETION_FAILED;
+		return typev.deleteType(name) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
 }
