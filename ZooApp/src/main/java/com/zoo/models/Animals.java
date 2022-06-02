@@ -27,7 +27,7 @@ public class Animals {
 	private String diet;
 	
 	@OneToOne
-	@JoinColumn(name="a_habitatid", referencedColumnName = "t_id")
+	@JoinColumn(name="a_habitat_type", referencedColumnName = "t_id")
 	private HabitatType habitatType;
 
 	public Animals() {
@@ -54,46 +54,58 @@ public class Animals {
 		this.habitatType = habitatType;
 	}
 
+	
+	
 
 	public int getId() {
 		return id;
 	}
 
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 
 	public String getName() {
 		return name;
 	}
 
+
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public HabitatType getHabitatId() {
-		return habitatType;
-	}
-
-	public void setHabitatId(HabitatType habitatId) {
-		this.habitatType = habitatId;
-	}
 
 	public double getLifespan() {
 		return lifespan;
 	}
 
+
 	public void setLifespan(double lifespan) {
 		this.lifespan = lifespan;
 	}
+
 
 	public String getDiet() {
 		return diet;
 	}
 
+
 	public void setDiet(String diet) {
 		this.diet = diet;
 	}
+
+
+	public HabitatType getHabitatType() {
+		return habitatType;
+	}
+
+
+	public void setHabitatType(HabitatType habitatType) {
+		this.habitatType = habitatType;
+	}
+
 
 	@Override
 	public int hashCode() {
@@ -114,11 +126,14 @@ public class Animals {
 				&& Objects.equals(name, other.name);
 	}
 
+
 	@Override
 	public String toString() {
-		
-		return "Animals [id=" + id + ", name=" + name + ", habitatId=" + habitatType + ", lifespan=" + lifespan
-				+ ", diet=" + diet + "]";
+		return "Animals [id=" + id + ", name=" + name + ", lifespan=" + lifespan + ", diet=" + diet + ", habitatType="
+				+ habitatType + "]";
 	}
+
+	
+	
 	
 }
