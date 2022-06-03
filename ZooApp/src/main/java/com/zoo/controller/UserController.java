@@ -55,7 +55,7 @@ public class UserController {
 	}
 	
 	
-	@PostMapping("/users")
+	@PostMapping("/createUser")
 	@ApiOperation("create new user entity")
 	public @ResponseBody ClientMessage createAccount(@RequestBody User user) {
 		return userv.createAccount(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
