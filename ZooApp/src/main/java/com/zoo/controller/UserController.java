@@ -33,13 +33,12 @@ public class UserController {
 	
 	@Autowired
 	private UserService userv;
-
 	
 	@ApiOperation(value="User login with username and password", notes="Provide username and password to login", response= User.class)
-    @GetMapping(path = "/login")
-    public @ResponseBody User userLogin(@RequestParam(value="username", name="username") String username, @RequestParam(value="password", name="password") String password){
-        return userv.login(username, password);
-    }
+	@GetMapping(path = "/login")
+	public @ResponseBody User userLogin(@RequestParam(value="username, password", name="username, password") String username, String password){
+		return userv.login(username, password);
+	}
 	
 	@ApiOperation(value="Find user by id number", notes="Provide an id to look up a specific user from the API", response = User.class)
 	@GetMapping(path = "/user")
@@ -48,27 +47,27 @@ public class UserController {
 		return userv.findUsernameById(id);
 	}
 	
-	@ApiOperation(value="Find animal by name", notes="Provide an animal name to look up a specific animal from the API", response = Animals.class)
+	@ApiOperation(value="Find animal by id", notes="Provide an animal name to look up a specific animal from the API", response = Animals.class)
 	@GetMapping(path = "/animals")
-	public @ResponseBody Animals getAnimalName (@RequestParam(value="name", name="name") String name) {
-		System.out.println("TEST: " + userv.findAnimalsByName(name));
-		return userv.findAnimalsByName(name);
+	public @ResponseBody Animals getAnimalName (@RequestParam(value="id", name="id") int id) {
+		System.out.println("TEST: " + userv.findAnimalById(id));
+		return userv.findAnimalById(id);
 	}
 	
 	
-	@PostMapping("/user")
+	@PostMapping("/createUser")
 	@ApiOperation("create new user entity")
 	public @ResponseBody ClientMessage createAccount(@RequestBody User user) {
 		return userv.createAccount(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 
-	@PutMapping("/user")
+	@PutMapping("/updateUser")
 	@ApiOperation("update new user entity")
 	public @ResponseBody ClientMessage editUser(@RequestBody User user) {
 		return userv.editUser(user) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	}
 
-	@DeleteMapping("/user")
+	@DeleteMapping("/deleteUser")
 	@ApiOperation("delete user entity")
 	public @ResponseBody ClientMessage deleteUser(@RequestBody User user) {
 		return userv.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
