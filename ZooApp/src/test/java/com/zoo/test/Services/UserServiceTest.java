@@ -78,7 +78,7 @@ public class UserServiceTest {
 		//for finding an animal name
 		arepo = Mockito.mock(AnimalsRepository.class);
 		
-		aserv = new AnimalsServiceImpl(arepo);
+		//aserv = new AnimalsServiceImpl(arepo);
 		
 		a1 = new Animals(1, "Lion", 50, "Carnivore", new HabitatType(1, "Africa"));
 		dummyDb1 = new ArrayList<Animals>();
@@ -158,13 +158,13 @@ public class UserServiceTest {
 	
 	@Test
 	@Order(7)
-	@DisplayName("7. Get Animal by Id Happy Path Test")
-	void testFindAnimalById() {
+	@DisplayName("7. Get Animal name by Id Happy Path Test")
+	void testFindAnimalByName() {
 		//arrange step
-		when(userv.findAnimalsById(1)).thenReturn((a1));
+		when(userv.findAnimalsByName("Lion")).thenReturn((a1));
 		
 		//act + assert step
-		assertEquals(a1, userv.findAnimalsById(1));
+		assertEquals(a1, userv.findAnimalsByName("Lion"));
 	}
 	
 	@Test

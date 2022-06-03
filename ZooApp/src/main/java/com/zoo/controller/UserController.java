@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -41,33 +40,37 @@ public class UserController {
 	}
 	
 	@ApiOperation(value="Find user by id number", notes="Provide an id to look up a specific user from the API", response = User.class)
-	@GetMapping("/getUser")
+	@GetMapping(path = "/user")
 	public @ResponseBody User getById(@RequestParam(value="id", name="id") int id) {
 		System.out.println("TEST: " + userv.findUsernameById(id));
 		return userv.findUsernameById(id);
 	}
 	
-	@ApiOperation(value="Find animal by id", notes="Provide an animal name to look up a specific animal from the API", response = Animals.class)
-	@GetMapping(path = "/getAnimal")
-	public @ResponseBody Animals getAnimalName (@RequestParam(value="id", name="id") int AnimalId) {
-		System.out.println("TEST: " + userv.findAnimalsById(AnimalId));
-		return userv.findAnimalsById(AnimalId);
+	@ApiOperation(value="Find animal by name", notes="Provide an animal name to look up a specific animal from the API", response = Animals.class)
+	@GetMapping(path = "/animals")
+	public @ResponseBody Animals getAnimalName (@RequestParam(value="name", name="name") String name) {
+		System.out.println("TEST: " + userv.findAnimalsByName(name));
+		return userv.findAnimalsByName(name);
 	}
 	
 	
+<<<<<<< HEAD
 	@PostMapping("/createUser")
+=======
+	@GetMapping("/users")
+>>>>>>> 9d26276e437812ef7034fd30db9fc2d904deb238
 	@ApiOperation("create new user entity")
 	public @ResponseBody ClientMessage createAccount(@RequestBody User user) {
 		return userv.createAccount(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 
-	@PutMapping("/updateUser")
+	@PostMapping("/user")
 	@ApiOperation("update new user entity")
 	public @ResponseBody ClientMessage editUser(@RequestBody User user) {
 		return userv.editUser(user) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	}
 
-	@DeleteMapping("/deleteUser")
+	@DeleteMapping("/user")
 	@ApiOperation("delete user entity")
 	public @ResponseBody ClientMessage deleteUser(@RequestBody User user) {
 		return userv.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;

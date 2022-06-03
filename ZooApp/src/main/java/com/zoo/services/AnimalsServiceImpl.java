@@ -17,10 +17,6 @@ public class AnimalsServiceImpl implements AnimalsService {
 	@Autowired
 	private AnimalsRepository arepo;
 	
-	public AnimalsServiceImpl(AnimalsRepository dao) {
-		this.arepo = dao;
-	}
-	
 	private static Logger log = Logger.getLogger(AnimalsServiceImpl.class);
 	
 	@Override

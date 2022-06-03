@@ -49,7 +49,7 @@ class AnimalsTest {
 		
 		arepo = Mockito.mock(AnimalsRepository.class);
 		
-		aserv = new AnimalsServiceImpl(arepo);
+		//aserv = new AnimalsServiceImpl(arepo);
 		
 		a1 = new Animals(1, "Lion", 50, "Carnivore", new HabitatType(1, "Africa"));
 		a2 = new Animals(2, "Panther", 50, "Omnivore", new HabitatType(2, "South America"));
@@ -89,7 +89,7 @@ class AnimalsTest {
 	
 	@Test
 	@Order(3)
-	@DisplayName("Get all Animal Test")
+	@DisplayName("Get all Animals Test")
 	void testGetAllAnimals() {
 		
 		when(aserv.getAllAnimals()).thenReturn(dummyDb);
@@ -101,7 +101,7 @@ class AnimalsTest {
 	
 	@Test
 	@Order(4)
-	@DisplayName("Update Animal Test")
+	@DisplayName("Update Animals Test")
 	void testUpdateCandy() {
 		a2.setName("Jorge");;
 		a2.setDiet("Carnivore");

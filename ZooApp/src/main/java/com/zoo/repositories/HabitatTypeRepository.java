@@ -11,13 +11,13 @@ import com.zoo.models.HabitatType;
 @Transactional
 public interface HabitatTypeRepository extends JpaRepository<HabitatType, Integer>{
 	
-	@Query(value="UPDATE habitat_type SET t_name=?1 t_id=?2", nativeQuery = true)
+	@Query(value="UPDATE habitat_type SET t_name=?1 WHERE t_id=?2 RETURNING true", nativeQuery = true)
 	public boolean update(String name, int id);
 	
 	@Query(value="SELECT * FROM habitat_type where t_name=?1", nativeQuery = true)
 	public HabitatType findByName(String name);
 	
-	@Query(value="DELETE * FROM habitat_type WHERE t_id=?1", nativeQuery = true)
+	@Query(value="DELETE FROM habitat_type WHERE t_id=?1 RETURNING true", nativeQuery = true)
 	public boolean delete(int id);
 
 }

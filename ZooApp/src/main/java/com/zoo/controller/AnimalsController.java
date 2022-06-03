@@ -39,15 +39,17 @@ public class AnimalsController {
 	private AnimalsService aserv;
 
 	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific animal from the API", response = Animals.class)
-	 @GetMapping(path = "/animalsid") 
-	 public @ResponseBody Animals getById(@RequestParam(value = "id", name = "id") int id) { 
+	 
+	 @GetMapping(path = "/id") 
+	 public @ResponseBody Animals getById(@RequestParam int id) { 
 		 
 		 log.info("finding animal by Id in controller...");
-		 System.out.println("TEST: " + aserv.getAnimalsById(id));
+		 
 		 return aserv.getAnimalsById(id); 
+	 
 	 }
-	
-	@GetMapping("/animalsall")
+	 
+	@GetMapping("/animals")
 	@ApiOperation(value="Find all animals")
 	public @ResponseBody List<Animals> getAll() {
 		
@@ -55,18 +57,15 @@ public class AnimalsController {
 		return aserv.getAllAnimals();
 	}
 	
-	@PostMapping("/animalsnew")
+	@PostMapping("/animals")
 	@ApiOperation(value="Create new animal entity")
 	public @ResponseBody ClientMessage createAnimals(@RequestBody Animals animals) {
 		
 		log.info("creating a new animal in controller...");
-		log.info(animals.getHabitatType());
-		
 		return aserv.createAnimal(animals) ? CREATION_SUCCESSFUL : CREATION_FAILED;
-		
 	}
 	
-	@PutMapping("/animalsupdate")
+	@PutMapping("/animals")
 	@ApiOperation(value="Update animal entity")
 	public @ResponseBody ClientMessage updateAnimals(@RequestBody Animals animals) {
 		
@@ -74,8 +73,11 @@ public class AnimalsController {
 		return aserv.updateAnimals(animals) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	}
 	
-	@DeleteMapping("/animalsdelete")
+	@DeleteMapping("/animals")
 	@ApiOperation(value="Remove animal entity")
+
+
+
 	public @ResponseBody ClientMessage deleteAnimals(@RequestBody Animals animals) {
 
 		log.info("deleting an animal in controller...");
