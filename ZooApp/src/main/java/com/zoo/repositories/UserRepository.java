@@ -19,10 +19,10 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 	@Query(value="SELECT * FROM username WHERE u_id=?1", nativeQuery=true)
 	public User findById(int id);
 	
-	@Query(value="SELECT * FROM user WHERE u_username=?1, u_password=?2", nativeQuery=true)
+	@Query(value="SELECT * FROM users WHERE u_username=?1 AND u_password=?2", nativeQuery=true)
 	public User userLogin (String username, String password);
 	
-	@Query(value="SELECT * FROM animal name WHERE a_name=?1", nativeQuery=true)
+	@Query(value="SELECT * FROM animals name WHERE a_name=?1", nativeQuery=true)
 	public Animals findAnimals(String Aname);
 }
 

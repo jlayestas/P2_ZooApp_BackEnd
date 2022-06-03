@@ -49,6 +49,7 @@ class AnimalsTest {
 		
 		arepo = Mockito.mock(AnimalsRepository.class);
 		
+
 		a1 = new Animals(1, "Lion", 50, "Carnivore", new HabitatType(1, "Africa"));
 		a2 = new Animals(2, "Panther", 50, "Omnivore", new HabitatType(2, "South America"));
 		

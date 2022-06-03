@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,12 +33,13 @@ public class UserController {
 	
 	@Autowired
 	private UserService userv;
+
 	
 	@ApiOperation(value="User login with username and password", notes="Provide username and password to login", response= User.class)
-	@GetMapping(path = "/login")
-	public @ResponseBody User userLogin(@RequestParam(value="username, password", name="username, password") String username, String password){
-		return userv.login(username, password);
-	}
+    @GetMapping(path = "/login")
+    public @ResponseBody User userLogin(@RequestParam(value="username", name="username") String username, @RequestParam(value="password", name="password") String password){
+        return userv.login(username, password);
+    }
 	
 	@ApiOperation(value="Find user by id number", notes="Provide an id to look up a specific user from the API", response = User.class)
 	@GetMapping(path = "/user")
@@ -54,13 +56,13 @@ public class UserController {
 	}
 	
 	
-	@GetMapping("/users")
+	@PostMapping("/user")
 	@ApiOperation("create new user entity")
 	public @ResponseBody ClientMessage createAccount(@RequestBody User user) {
 		return userv.createAccount(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 
-	@PostMapping("/user")
+	@PutMapping("/user")
 	@ApiOperation("update new user entity")
 	public @ResponseBody ClientMessage editUser(@RequestBody User user) {
 		return userv.editUser(user) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
