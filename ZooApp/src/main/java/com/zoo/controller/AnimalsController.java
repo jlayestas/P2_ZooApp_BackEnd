@@ -39,14 +39,16 @@ public class AnimalsController {
 	private AnimalsService aserv;
 
 	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific animal from the API", response = Animals.class)
+	 
 	 @GetMapping(path = "/id") 
-	 public @ResponseBody Animals getById(@RequestParam(value = "id", name = "id") int id) { 
+	 public @ResponseBody Animals getById(@RequestParam int id) { 
 		 
 		 log.info("finding animal by Id in controller...");
-		 System.out.println("TEST: " + aserv.getAnimalsById(id));
+		 
 		 return aserv.getAnimalsById(id); 
+	 
 	 }
-	
+	 
 	@GetMapping("/animals")
 	@ApiOperation(value="Find all animals")
 	public @ResponseBody List<Animals> getAll() {
