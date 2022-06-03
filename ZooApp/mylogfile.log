@@ -236,3 +236,15 @@
 2022-06-02 15:16:34 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
 2022-06-02 15:18:18 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
 >>>>>>> d86d52e45417294c86ff5d6fb12c877bbe0107f8
+2022-06-02 16:51:14 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-02 16:51:14 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=0, role=manager]
+2022-06-02 16:51:33 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-02 16:51:33 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-02 16:51:56 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-02 16:51:56 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=use]
+2022-06-02 16:52:53 INFO [com.zoo.controller.UserRoleController]: getting user role id#1
+2022-06-02 16:52:53 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 1
+2022-06-02 16:53:07 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-02 16:53:07 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-02 16:53:36 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-02 16:53:36 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=use]
