@@ -118,7 +118,7 @@ public class UserControllerTest {
 		when(uservice.createAccount(mockUserCreation)).thenReturn(true);
 		
 		//act
-		RequestBuilder request = MockMvcRequestBuilders.post("/api/candy")
+		RequestBuilder request = MockMvcRequestBuilders.post("/api/users/createUser")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
 				.content(om.writeValueAsString(mockUserCreation))
 				.contentType(MediaType.APPLICATION_JSON);
@@ -133,7 +133,7 @@ public class UserControllerTest {
 	@DisplayName("3. Get User by ID - Happy Path Scenerio Test")
 	public void testGetById() throws Exception {
 		when(uservice.findUsernameById(1)).thenReturn(mockUser1);
-		RequestBuilder request = MockMvcRequestBuilders.get("/api/candy?id=1");
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/users/user?id=1");
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(mockUser1), result.getResponse().getContentAsString());
 	}
@@ -144,7 +144,7 @@ public class UserControllerTest {
 	// @Disabled("Disabled until CreateCandyTest is up!")
 	public void testUpdateUser() throws Exception {
 		when(uservice.editUser(mockUserModification)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.put("/api/candy")
+		RequestBuilder request = MockMvcRequestBuilders.put("/api/users/updateUser")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
 				.content(om.writeValueAsString(mockUserModification))
 				.contentType(MediaType.APPLICATION_JSON);
@@ -159,7 +159,7 @@ public class UserControllerTest {
 	@DisplayName("5. Delete User - Happy Path Scenerio Test")
 	public void testDeleteCandy() throws Exception {
 		when(uservice.deleteUser(mockUserDeletion)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.delete("/api/candy")
+		RequestBuilder request = MockMvcRequestBuilders.delete("/api/users/deleteUser")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
 				.content(om.writeValueAsString(mockUserDeletion))
 				.contentType(MediaType.APPLICATION_JSON);

@@ -60,13 +60,11 @@ public class UserServiceImpl implements UserService {
 		log.info("In service layer, trying to login user: " + username + password);
 		return urepo.userLogin(username, password);
 	}
-
 	@Override
-	public Animals findAnimalsByName(String name) {
-		log.info("In service layer, trying to find animal by name: " + name);
-		System.out.println("Animal Name: " + name);
-	return urepo.findAnimals(name);
+	public Animals findAnimalById(int id) {
+		log.info("In service layer, trying to find animal by id: " + id);
+		System.out.println("Animal Name: " + id);
+		return urepo.findAnimals(id);
 	}
-
 
 }

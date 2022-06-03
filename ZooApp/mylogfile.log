@@ -463,3 +463,17 @@
 2022-06-03 11:56:13 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
 2022-06-03 11:58:07 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameEurope
 >>>>>>> 9d26276e437812ef7034fd30db9fc2d904deb238
+2022-06-03 13:37:11 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameAfrica
+2022-06-03 13:38:27 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-03 13:38:27 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=null, lifespan=50.0, diet=Carnivore]
+2022-06-03 14:35:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 14:35:59 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-03 14:35:59 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=manager]
+2022-06-03 14:36:02 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 14:39:45 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 14:41:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 14:48:06 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-03 15:07:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 15:08:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 15:08:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-03 15:08:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
