@@ -35,7 +35,7 @@ public class UserController {
 	
 	@ApiOperation(value="User login with username and password", notes="Provide username and password to login", response= User.class)
 	@GetMapping(path = "/login")
-	public @ResponseBody User userLogin(@RequestParam(value="username, password", name="username, password") String username, String password){
+	public @ResponseBody User userLogin(@RequestParam(value="username", name="username") String username, @RequestParam(value="password", name="password") String password){
 		return userv.login(username, password);
 	}
 	

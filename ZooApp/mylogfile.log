@@ -270,3 +270,12 @@
 2022-06-03 11:49:32 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameAsia
 2022-06-03 11:56:13 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
 2022-06-03 11:58:07 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameEurope
+2022-06-03 16:10:07 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: usernamepassword
+2022-06-03 16:12:00 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: usernamepassword
+2022-06-03 16:13:16 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: usernamepassword
+2022-06-03 16:21:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: 'Naked Mole-rat'
+2022-06-03 16:22:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: 'Naked Mole-rat'
+2022-06-03 16:22:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: 'Naked Mole-rat'
+2022-06-03 16:23:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Naked Mole-rat
+2022-06-03 16:31:21 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Naked Mole-rat
+2022-06-03 16:31:21 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Naked Mole-rat

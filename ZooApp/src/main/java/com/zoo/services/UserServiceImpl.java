@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.zoo.models.Animals;
 import com.zoo.models.User;
+import com.zoo.repositories.AnimalsRepository;
 import com.zoo.repositories.UserRepository;
 
 @Service
@@ -19,9 +20,8 @@ public class UserServiceImpl implements UserService {
 	private UserRepository urepo;
 
 	@Autowired
-	public UserServiceImpl(UserRepository udao) {
-		this.urepo = udao;
-	}
+	private AnimalsRepository arepo;
+	
 	@Override
 	public boolean createAccount(User user) {
 		log.info("In service layer, trying to create new user: " + user);
@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService {
 	public Animals findAnimalsByName(String name) {
 		log.info("In service layer, trying to find animal by name: " + name);
 		System.out.println("Animal Name: " + name);
-	return urepo.findAnimals(name);
+	return arepo.findById(urepo.findAnimals(name));
 	}
 
 
