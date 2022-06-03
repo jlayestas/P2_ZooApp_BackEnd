@@ -477,3 +477,10 @@
 2022-06-03 15:08:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=UserRoles [id=1, role=manager]]
 2022-06-03 15:08:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
 2022-06-03 15:08:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-03 15:40:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 15:41:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 15:41:53 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 15:42:01 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 16:20:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 16:20:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 16:23:13 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
