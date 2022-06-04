@@ -10,8 +10,8 @@ public interface UserService {
 	//find username by id number
 	public User findUsernameById(int id);
 	
-	//find animal name
-	public Animals findAnimalsByName(String name);
+	//find animal by id 
+	public Animals findAnimalById(int id);
 	
 	//update info
 	public boolean editUser(User user);
