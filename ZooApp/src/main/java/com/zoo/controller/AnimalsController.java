@@ -76,8 +76,6 @@ public class AnimalsController {
 	@DeleteMapping("/animals")
 	@ApiOperation(value="Remove animal entity")
 
-
-
 	public @ResponseBody ClientMessage deleteAnimals(@RequestBody Animals animals) {
 
 		log.info("deleting an animal in controller...");

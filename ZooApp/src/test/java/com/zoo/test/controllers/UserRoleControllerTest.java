@@ -16,7 +16,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -30,36 +29,33 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.zoo.controller.UserController;
-import com.zoo.models.User;
+import com.zoo.controller.UserRoleController;
 import com.zoo.models.UserRole;
-import com.zoo.repositories.UserRepository;
-import com.zoo.services.UserService;
-import com.zoo.services.UserServiceImpl;
+import com.zoo.services.UserRoleServices;
 import com.zoo.util.ClientMessageUtil;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(UserController.class)
+@WebMvcTest(UserRoleController.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class UserControllerTest {
+public class UserRoleControllerTest {
 	
-	private static User mockUser1;
-	private static User mockUser2;
-	private static User mockUserCreation;
-	private static User mockUserModification;
-	private static User mockUserDeletion;
-	private static List<User> dummyDb;
+	private static UserRole mockURole1;
+	private static UserRole mockURole2;
+	private static UserRole mockURoleCreation;
+	private static UserRole mockURoleModification;
+	private static UserRole mockURoleDeletion;
+	private static List<UserRole> dummyDb;
 	
 	ObjectMapper om = new ObjectMapper();
 	
 	@Autowired
-	UserController userController;
+	UserRoleController uRoleController;
 	
 	@Autowired
 	private MockMvc mockmvc;
 	
 	@MockBean
-	private UserService uservice;
+	private UserRoleServices urserv;
 	
 	@SuppressWarnings("deprecation")
 	public boolean isValidJSON (final String json) {
@@ -80,88 +76,92 @@ public class UserControllerTest {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		System.out.println("setUpBeforeClass() :: building test objects...");
-		//user id, username, password, first name, last name, email, user role
-		mockUser1 = new User(1, "CRock", "passWord", "Chris", "Rock", "Crock@gmail.com", new UserRole(1, "manager"));
-		mockUser1 = new User(2, "AHeard", "PooOnBed", "Amber", "Heard", "AHeard@gmail.com", new UserRole(2, "visitor"));
+		//id, role
+		mockURole1 = new UserRole(1, "manager");
+		mockURole2 = new UserRole(2, "user");
 		
-		mockUserCreation = new User("WSmith", "password", "Will", "Smith", "WSmith@gmail.com", new UserRole(3, "manager"));
+		mockURoleCreation = new UserRole("guest");
 		
-		mockUserModification = mockUserCreation;
-		mockUserModification.setUsername("WSmith");
-		mockUserModification.setPassword("password");
-		mockUserModification.setFirstName("Will");
-		mockUserModification.setLastName("Smith");
-		mockUserModification.setEmail("WSmith@gmailc.om");
-	
-
-		mockUserDeletion = new User(4 ,"Fluffy", "Password", "Gabriel", "Iglesias", "Fulffy@gmail.com", new UserRole(4, "visitor"));
+		mockURoleModification = mockURoleCreation;
+		mockURoleModification.setRole("guest");
 		
-		dummyDb = new ArrayList<User>();;
-		dummyDb.add(mockUser1);
-		dummyDb.add(mockUser2);
+		mockURoleDeletion = new UserRole(4, "admin");
+		
+		dummyDb =  new ArrayList<UserRole>();
+		dummyDb.add(mockURole1);
+		dummyDb.add(mockURole2);
 	}
 	
 	@Test
 	@Order(1)
 	@DisplayName("1. AppContext Sanity Test")
 	public void contextLoads() throws Exception {
-		assertThat(userController).isNotNull();
+		assertThat(uRoleController).isNotNull();
 	}
 	
 	@Test
 	@Order(2)
-	@DisplayName("2. Create User - Happy Path Scenerio Test")
-	public void testCreateUser() throws Exception {
+	@DisplayName("2. Create User role - Happy Path Scenerio Test")
+	public void testCreateUserRole() throws Exception {
 		// id number of this creation should be 3
-		mockUserCreation.setUserId(3);
+		mockURoleCreation.setId(3);
 		//tell Mockito the behavior that I want this method to act like in the mock environment
-		when(uservice.createAccount(mockUserCreation)).thenReturn(true);
+		when(urserv.createRole(mockURoleCreation)).thenReturn(true);;
 		
 		//act
-		RequestBuilder request = MockMvcRequestBuilders.post("/api/users/createUser")
+		RequestBuilder request = MockMvcRequestBuilders.post("/api/userRole/createRole")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockUserCreation))
+				.content(om.writeValueAsString(mockURoleCreation))
 				.contentType(MediaType.APPLICATION_JSON);
 		MvcResult result = mockmvc.perform(request).andReturn();
 		//assert
 		assertEquals(om.writeValueAsString(ClientMessageUtil.CREATION_SUCCESSFUL),
 				result.getResponse().getContentAsString());
 	}
-
+	
 	@Test
 	@Order(3)
-	@DisplayName("3. Get User by ID - Happy Path Scenerio Test")
-	public void testGetById() throws Exception {
-		when(uservice.findUsernameById(1)).thenReturn(mockUser1);
-		RequestBuilder request = MockMvcRequestBuilders.get("/api/users/user?id=1");
+	@DisplayName("3. Get User Role by ID - Happy Path Scenerio Test")
+	public void testGetRoleById() throws Exception {
+		when(urserv.getRoleById(1)).thenReturn(mockURole1);
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/userRole/GetRole?id=1");
 		MvcResult result = mockmvc.perform(request).andReturn();
-		assertEquals(om.writeValueAsString(mockUser1), result.getResponse().getContentAsString());
+		assertEquals(om.writeValueAsString(mockURole1), result.getResponse().getContentAsString());
 	}
 	
 	@Test
 	@Order(4)
-	@DisplayName("4. Update an Existing user - Happy Path Scenerio Test")
+	@DisplayName("4. Get All User Roles - Happy Path Scenerio Test")
+	public void testGetAllRoles() throws Exception {
+		when(urserv.getAllRoles()).thenReturn(dummyDb);
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/userRole/GetRoles");
+		MvcResult result = mockmvc.perform(request).andReturn();
+		assertEquals(om.writeValueAsString(dummyDb), result.getResponse().getContentAsString());
+	}
+	
+	@Test
+	@Order(5)
+	@DisplayName("5. Update an Existing Role - Happy Path Scenerio Test")
 	// @Disabled("Disabled until CreateCandyTest is up!")
-	public void testUpdateUser() throws Exception {
-		when(uservice.editUser(mockUserModification)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.put("/api/users/updateUser")
+	public void testUpdateRole() throws Exception {
+		when(urserv.updateRole(mockURoleModification)).thenReturn(true);
+		RequestBuilder request = MockMvcRequestBuilders.put("/api/userRole/UpdateRole")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockUserModification))
+				.content(om.writeValueAsString(mockURoleModification))
 				.contentType(MediaType.APPLICATION_JSON);
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(ClientMessageUtil.UPDATE_SUCCESSFUL),
 				result.getResponse().getContentAsString());
 	}
 	
-	
 	@Test
-	@Order(5)
-	@DisplayName("5. Delete User - Happy Path Scenerio Test")
-	public void testDeleteCandy() throws Exception {
-		when(uservice.deleteUser(mockUserDeletion)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.delete("/api/users/deleteUser")
+	@Order(6)
+	@DisplayName("6. Delete Role - Happy Path Scenerio Test")
+	public void testDeleteRole() throws Exception {
+		when(urserv.deleteUserRole(mockURoleDeletion)).thenReturn(true);
+		RequestBuilder request = MockMvcRequestBuilders.delete("/api/userRole/DeleteRole")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockUserDeletion))
+				.content(om.writeValueAsString(mockURoleDeletion))
 				.contentType(MediaType.APPLICATION_JSON);
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(ClientMessageUtil.DELETION_SUCCESSFUL),
@@ -169,7 +169,7 @@ public class UserControllerTest {
 	}
 	
 	@Test
-	@Order(6)
+	@Order(7)
 	@DisplayName("6. Unneccessay/Unused Test")
 	@Disabled("Disabled until CreateCandyTest is up!") 
 	// @Disabled will allow you to ignore this test while debugging other tests

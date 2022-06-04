@@ -22,6 +22,10 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private AnimalsRepository arepo;
 	
+	public UserServiceImpl(UserRepository udao) {
+		this.urepo = udao;
+	}
+
 	@Override
 	public boolean createAccount(User user) {
 		log.info("In service layer, trying to create new user: " + user);
