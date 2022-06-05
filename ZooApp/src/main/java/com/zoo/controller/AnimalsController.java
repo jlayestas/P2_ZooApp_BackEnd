@@ -40,7 +40,7 @@ public class AnimalsController {
 
 	 @ApiOperation(value="Find animal by id number", notes="Provide an id to lookup a specific animal from the API", response = Animals.class)
 	 
-	 @GetMapping(path = "/id") 
+	 @GetMapping(path = "/animalsid") 
 	 public @ResponseBody Animals getById(@RequestParam int id) { 
 		 
 		 log.info("finding animal by Id in controller...");
@@ -49,7 +49,7 @@ public class AnimalsController {
 	 
 	 }
 	 
-	@GetMapping("/animals")
+	@GetMapping("/animalsall")
 	@ApiOperation(value="Find all animals")
 	public @ResponseBody List<Animals> getAll() {
 		
@@ -57,7 +57,7 @@ public class AnimalsController {
 		return aserv.getAllAnimals();
 	}
 	
-	@PostMapping("/animals")
+	@PostMapping("/animalsnew")
 	@ApiOperation(value="Create new animal entity")
 	public @ResponseBody ClientMessage createAnimals(@RequestBody Animals animals) {
 		
@@ -65,7 +65,7 @@ public class AnimalsController {
 		return aserv.createAnimal(animals) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
-	@PutMapping("/animals")
+	@PutMapping("/animalsupdate")
 	@ApiOperation(value="Update animal entity")
 	public @ResponseBody ClientMessage updateAnimals(@RequestBody Animals animals) {
 		
@@ -73,7 +73,7 @@ public class AnimalsController {
 		return aserv.updateAnimals(animals) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	}
 	
-	@DeleteMapping("/animals")
+	@DeleteMapping("/animalsdelete")
 	@ApiOperation(value="Remove animal entity")
 
 	public @ResponseBody ClientMessage deleteAnimals(@RequestBody Animals animals) {

@@ -79,11 +79,8 @@ public class HabitatTypeController {
 	public @ResponseBody ClientMessage editHabitatType(@RequestBody HabitatType name) {
 		
 		log.info("update habitat type " + name);
-<<<<<<< HEAD
 		return typev.updateType(name) ? UPDATE_SUCCESSFUL : CREATION_FAILED;
-=======
-		return typev.updateType(name) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
->>>>>>> c84c1f504810acfa43513ca55f2959ff42368e56
+
 	}
 	
 	@DeleteMapping("/DeleteType")
