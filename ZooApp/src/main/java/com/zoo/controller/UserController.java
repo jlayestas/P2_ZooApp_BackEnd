@@ -7,6 +7,10 @@ import static com.zoo.util.ClientMessageUtil.DELETION_SUCCESSFUL;
 import static com.zoo.util.ClientMessageUtil.UPDATE_FAILED;
 import static com.zoo.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 
+import java.util.ArrayList;
+import java.util.Map;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.zoo.models.Animals;
 import com.zoo.models.ClientMessage;
 import com.zoo.models.User;
@@ -38,8 +43,10 @@ public class UserController {
 	
 	@ApiOperation(value="User login with username and password", notes="Provide username and password to login", response= User.class)
 	@GetMapping(path = "/login")
-	public @ResponseBody User userLogin(@RequestParam(value="username, password", name="username, password") String username, String password){
-		return userv.login(username, password);
+	public @ResponseBody User userLogin(@RequestBody(required=true) Map<String, String> credentials){
+		
+		
+		return userv.login(credentials.get("username"), credentials.get("password"));
 	}
 	
 	@ApiOperation(value="Find user by id number", notes="Provide an id to look up a specific user from the API", response = User.class)

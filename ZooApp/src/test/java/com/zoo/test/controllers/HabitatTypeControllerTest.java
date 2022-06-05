@@ -16,7 +16,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -30,39 +29,36 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.zoo.controller.UserController;
-import com.zoo.models.User;
-import com.zoo.models.UserRole;
-import com.zoo.repositories.UserRepository;
-import com.zoo.services.UserService;
-import com.zoo.services.UserServiceImpl;
+import com.zoo.controller.HabitatTypeController;
+import com.zoo.models.HabitatType;
+import com.zoo.services.HabitatTypeService;
 import com.zoo.util.ClientMessageUtil;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(UserController.class)
+@WebMvcTest(HabitatTypeController.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class UserControllerTest {
-	
-	private static User mockUser1;
-	private static User mockUser2;
-	private static User mockUserCreation;
-	private static User mockUserModification;
-	private static User mockUserDeletion;
-	private static List<User> dummyDb;
+public class HabitatTypeControllerTest {
+	 
+	private static HabitatType mockHType1;
+	private static HabitatType mockHType2;
+	private static HabitatType mockHTypeCreation;
+	private static HabitatType mockHTypeModification;
+	private static HabitatType mockHTypeDeletion;
+	private static List<HabitatType> dummyDb;
 	
 	ObjectMapper om = new ObjectMapper();
 	
 	@Autowired
-	UserController userController;
-	
+	HabitatTypeController HController;
+
 	@Autowired
 	private MockMvc mockmvc;
 	
 	@MockBean
-	private UserService uservice;
-	
+	private HabitatTypeService htserv;
+
 	@SuppressWarnings("deprecation")
-	public boolean isValidJSON (final String json) {
+	public boolean isValidJSON(final String json) {
 		boolean valid = false;
 		try {
 			final JsonParser parser = new ObjectMapper().getJsonFactory().createJsonParser(json);
@@ -74,94 +70,98 @@ public class UserControllerTest {
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
+
 		return valid;
 	}
-	
+
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		System.out.println("setUpBeforeClass() :: building test objects...");
-		//user id, username, password, first name, last name, email, user role
-		mockUser1 = new User(1, "CRock", "passWord", "Chris", "Rock", "Crock@gmail.com", new UserRole(1, "manager"));
-		mockUser1 = new User(2, "AHeard", "PooOnBed", "Amber", "Heard", "AHeard@gmail.com", new UserRole(2, "visitor"));
+		mockHType1 = new HabitatType(1, "Africa");
+		mockHType2 = new HabitatType(2, "Asia");
 		
-		mockUserCreation = new User("WSmith", "password", "Will", "Smith", "WSmith@gmail.com", new UserRole(3, "manager"));
+		mockHTypeCreation =  new HabitatType("South America");
 		
-		mockUserModification = mockUserCreation;
-		mockUserModification.setUsername("WSmith");
-		mockUserModification.setPassword("password");
-		mockUserModification.setFirstName("Will");
-		mockUserModification.setLastName("Smith");
-		mockUserModification.setEmail("WSmith@gmailc.om");
-	
-
-		mockUserDeletion = new User(4 ,"Fluffy", "Password", "Gabriel", "Iglesias", "Fulffy@gmail.com", new UserRole(4, "visitor"));
+		mockHTypeModification = mockHTypeCreation;
+		mockHTypeModification = new HabitatType("South America");
 		
-		dummyDb = new ArrayList<User>();;
-		dummyDb.add(mockUser1);
-		dummyDb.add(mockUser2);
+		mockHTypeDeletion = new HabitatType(4, "Europe");
+		
+		dummyDb = new ArrayList<HabitatType>();
+		dummyDb.add(mockHType1);
+		dummyDb.add(mockHType2);
 	}
 	
 	@Test
 	@Order(1)
 	@DisplayName("1. AppContext Sanity Test")
 	public void contextLoads() throws Exception {
-		assertThat(userController).isNotNull();
+		assertThat(HController).isNotNull();
 	}
 	
 	@Test
 	@Order(2)
-	@DisplayName("2. Create User - Happy Path Scenerio Test")
-	public void testCreateUser() throws Exception {
+	@DisplayName("2. Create Habitat Type - Happy Path Scenerio Test")
+	public void testCreateHType() throws Exception {
 		// id number of this creation should be 3
-		mockUserCreation.setUserId(3);
+		mockHTypeCreation = new HabitatType(3);
 		//tell Mockito the behavior that I want this method to act like in the mock environment
-		when(uservice.createAccount(mockUserCreation)).thenReturn(true);
+		when(htserv.createType(mockHTypeCreation)).thenReturn(true);;
 		
 		//act
-		RequestBuilder request = MockMvcRequestBuilders.post("/api/users/createUser")
+		RequestBuilder request = MockMvcRequestBuilders.post("/api/habitatType/createName?")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockUserCreation))
+				.content(om.writeValueAsString(mockHTypeCreation))
 				.contentType(MediaType.APPLICATION_JSON);
 		MvcResult result = mockmvc.perform(request).andReturn();
 		//assert
 		assertEquals(om.writeValueAsString(ClientMessageUtil.CREATION_SUCCESSFUL),
 				result.getResponse().getContentAsString());
 	}
-
+	
 	@Test
 	@Order(3)
-	@DisplayName("3. Get User by ID - Happy Path Scenerio Test")
-	public void testGetById() throws Exception {
-		when(uservice.findUsernameById(1)).thenReturn(mockUser1);
-		RequestBuilder request = MockMvcRequestBuilders.get("/api/users/user?id=1");
+	@DisplayName("3. Get User Role by ID - Happy Path Scenerio Test")
+	public void testGetTypeByName() throws Exception {
+		when(htserv.getTypeByName("Africa")).thenReturn(mockHType1);
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/habitatType/type?name=Africa");
 		MvcResult result = mockmvc.perform(request).andReturn();
-		assertEquals(om.writeValueAsString(mockUser1), result.getResponse().getContentAsString());
+		assertEquals(om.writeValueAsString(mockHType1), result.getResponse().getContentAsString());
 	}
 	
 	@Test
 	@Order(4)
-	@DisplayName("4. Update an Existing user - Happy Path Scenerio Test")
+	@DisplayName("4. Get All Types - Happy Path Scenerio Test")
+	public void testGetAllTypes() throws Exception {
+		when(htserv.getAllTypes()).thenReturn(dummyDb);
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/habitatType/all");
+		MvcResult result = mockmvc.perform(request).andReturn();
+		assertEquals(om.writeValueAsString(dummyDb), result.getResponse().getContentAsString());
+	}
+	
+	@Test
+	@Order(5)
+	@DisplayName("5. Update an Existing Type - Happy Path Scenerio Test")
 	// @Disabled("Disabled until CreateCandyTest is up!")
-	public void testUpdateUser() throws Exception {
-		when(uservice.editUser(mockUserModification)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.put("/api/users/updateUser")
+	public void testUpdateType() throws Exception {
+		when(htserv.updateType(mockHTypeModification)).thenReturn(true);
+		RequestBuilder request = MockMvcRequestBuilders.put("/api/habitatType/UpdateType")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockUserModification))
+				.content(om.writeValueAsString(mockHTypeModification))
 				.contentType(MediaType.APPLICATION_JSON);
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(ClientMessageUtil.UPDATE_SUCCESSFUL),
 				result.getResponse().getContentAsString());
 	}
 	
-	
 	@Test
-	@Order(5)
-	@DisplayName("5. Delete User - Happy Path Scenerio Test")
-	public void testDeleteCandy() throws Exception {
-		when(uservice.deleteUser(mockUserDeletion)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.delete("/api/users/deleteUser")
+	@Order(6)
+	@DisplayName("6. Delete Type - Happy Path Scenerio Test")
+	public void testDeleteType() throws Exception {
+		when(htserv.deleteType(mockHTypeDeletion)).thenReturn(true);
+		RequestBuilder request = MockMvcRequestBuilders.delete("/api/habitatType/DeleteType")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockUserDeletion))
+				.content(om.writeValueAsString(mockHTypeDeletion))
 				.contentType(MediaType.APPLICATION_JSON);
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(ClientMessageUtil.DELETION_SUCCESSFUL),
@@ -169,7 +169,7 @@ public class UserControllerTest {
 	}
 	
 	@Test
-	@Order(6)
+	@Order(7)
 	@DisplayName("6. Unneccessay/Unused Test")
 	@Disabled("Disabled until CreateCandyTest is up!") 
 	// @Disabled will allow you to ignore this test while debugging other tests
