@@ -4,6 +4,8 @@ import static com.zoo.util.ClientMessageUtil.CREATION_FAILED;
 import static com.zoo.util.ClientMessageUtil.CREATION_SUCCESSFUL;
 import static com.zoo.util.ClientMessageUtil.DELETION_FAILED;
 import static com.zoo.util.ClientMessageUtil.DELETION_SUCCESSFUL;
+import static com.zoo.util.ClientMessageUtil.UPDATE_FAILED;
+import static com.zoo.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 
 import java.util.List;
 
@@ -75,7 +77,7 @@ public class HabitatTypeController {
 	public @ResponseBody ClientMessage editHabitatType(@RequestBody HabitatType name) {
 		
 		log.info("update habitat type " + name);
-		return typev.updateType(name) ? CREATION_SUCCESSFUL : CREATION_FAILED;
+		return typev.updateType(name) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	}
 	
 	@DeleteMapping("/DeleteType")

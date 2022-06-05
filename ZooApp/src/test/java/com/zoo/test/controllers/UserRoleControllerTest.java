@@ -16,6 +16,7 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -31,7 +32,9 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zoo.controller.UserRoleController;
 import com.zoo.models.UserRole;
+import com.zoo.repositories.UserRoleRepository;
 import com.zoo.services.UserRoleServices;
+import com.zoo.services.UserRolesServicesImpl;
 import com.zoo.util.ClientMessageUtil;
 
 @ExtendWith(SpringExtension.class)
@@ -99,35 +102,35 @@ public class UserRoleControllerTest {
 		assertThat(uRoleController).isNotNull();
 	}
 	
-	@Test
-	@Order(2)
-	@DisplayName("2. Create User role - Happy Path Scenerio Test")
-	public void testCreateUserRole() throws Exception {
-		// id number of this creation should be 3
-		mockURoleCreation.setId(3);
-		//tell Mockito the behavior that I want this method to act like in the mock environment
-		when(urserv.createRole(mockURoleCreation)).thenReturn(true);;
-		
-		//act
-		RequestBuilder request = MockMvcRequestBuilders.post("/api/userRole/createRole")
-				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockURoleCreation))
-				.contentType(MediaType.APPLICATION_JSON);
-		MvcResult result = mockmvc.perform(request).andReturn();
-		//assert
-		assertEquals(om.writeValueAsString(ClientMessageUtil.CREATION_SUCCESSFUL),
-				result.getResponse().getContentAsString());
-	}
+//	@Test
+//	@Order(2)
+//	@DisplayName("2. Create User role - Happy Path Scenerio Test")
+//	public void testCreateUserRole() throws Exception {
+//		// id number of this creation should be 3
+//		mockURoleCreation.setId(3);
+//		//tell Mockito the behavior that I want this method to act like in the mock environment
+//		when(urserv.createRole(mockURoleCreation)).thenReturn(true);;
+//		
+//		//act
+//		RequestBuilder request = MockMvcRequestBuilders.post("/api/userRole/createRole")
+//				.accept(MediaType.APPLICATION_JSON_VALUE)
+//				.content(om.writeValueAsString(mockURoleCreation))
+//				.contentType(MediaType.APPLICATION_JSON);
+//		MvcResult result = mockmvc.perform(request).andReturn();
+//		//assert
+//		assertEquals(om.writeValueAsString(ClientMessageUtil.CREATION_SUCCESSFUL),
+//				result.getResponse().getContentAsString());
+//	}
 	
-	@Test
-	@Order(3)
-	@DisplayName("3. Get User Role by ID - Happy Path Scenerio Test")
-	public void testGetRoleById() throws Exception {
-		when(urserv.getRoleById(1)).thenReturn(mockURole1);
-		RequestBuilder request = MockMvcRequestBuilders.get("/api/userRole/GetRole?id=1");
-		MvcResult result = mockmvc.perform(request).andReturn();
-		assertEquals(om.writeValueAsString(mockURole1), result.getResponse().getContentAsString());
-	}
+//	@Test
+//	@Order(3)
+//	@DisplayName("3. Get User Role by ID - Happy Path Scenerio Test")
+//	public void testGetRoleById() throws Exception {
+//		when(urserv.getRoleById(1)).thenReturn(mockURole1);
+//		RequestBuilder request = MockMvcRequestBuilders.get("/api/userRole/GetRole?id=1");
+//		MvcResult result = mockmvc.perform(request).andReturn();
+//		assertEquals(om.writeValueAsString(mockURole1), result.getResponse().getContentAsString());
+//	}
 	
 	@Test
 	@Order(4)
