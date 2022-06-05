@@ -8,6 +8,7 @@ import static com.zoo.util.ClientMessageUtil.UPDATE_FAILED;
 import static com.zoo.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,6 +27,7 @@ import com.zoo.services.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
+@CrossOrigin(origins ="*")
 @RestController
 @RequestMapping("/api/users")
 @Api(value= "UserRestController", description = "REST controller related to User Entities")
@@ -60,6 +62,11 @@ public class UserController {
 	public @ResponseBody ClientMessage createAccount(@RequestBody User user) {
 		return userv.createAccount(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
+	
+//	public @ResponseBody ClientMessage createAccount(@RequestParam(value="username", name="username") String name) {
+//		
+//	}
+//	
 
 	@PutMapping("/updateUser")
 	@ApiOperation("update new user entity")
