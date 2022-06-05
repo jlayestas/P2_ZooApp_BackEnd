@@ -720,3 +720,12 @@
 2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
 2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
 >>>>>>> e54698ae81304f9a967c015aea62704baa99ba5f
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 22:59:16 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devpit, password=pass, firstName=dev1, lastName=pit, email=devpit@gamil.com, userRole=UserRoles [id=2, role=users]]
+2022-06-04 23:01:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=robertjames, password=password, firstName=robert, lastName=james, email=rj@gmail.com, userRole=UserRoles [id=2, role=user]]
