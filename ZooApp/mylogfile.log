@@ -585,6 +585,21 @@
 2022-06-03 16:20:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
 2022-06-03 16:23:13 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
 >>>>>>> 50e2b7be182a71c73d312f3f40058689bf8cca4e
+<<<<<<< HEAD
+2022-06-04 09:43:03 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=dhruv, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 09:44:06 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=raool, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 09:56:30 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=username, password=password, firstName=Amazon, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 09:56:49 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=Amazon, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:04:49 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=Dhruv, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:08:05 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=Eric, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:08:38 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=username, password=password, firstName=Dev, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:29:56 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devpit, password=password, firstName=Dev, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 13:39:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devp, password=pass, firstName=null, lastName=null, email=devp@gmail.com, userRole=null]
+2022-06-04 13:58:08 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devp, password=pat, firstName=null, lastName=null, email=dp@gmail.com, userRole=null]
+2022-06-04 19:50:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=dhruv, password=patel, firstName=null, lastName=null, email=dppp@gmail.com, userRole=null]
+2022-06-04 20:02:12 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=dev, password=pass, firstName=null, lastName=null, email=devp@gamil.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 20:06:12 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=dhruv, password=pass, firstName=dhruv, lastName=patel, email=dp@gmail.com, userRole=UserRoles [id=2, role=user]]
+=======
 2022-06-04 13:34:30 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
 2022-06-04 13:34:30 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
 2022-06-04 13:34:39 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
@@ -704,6 +719,7 @@
 2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
 2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
 2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+<<<<<<< HEAD
 2022-06-04 22:58:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
 2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
 2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
@@ -938,3 +954,15 @@
 2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
 2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
 2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+=======
+>>>>>>> e54698ae81304f9a967c015aea62704baa99ba5f
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 22:59:16 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devpit, password=pass, firstName=dev1, lastName=pit, email=devpit@gamil.com, userRole=UserRoles [id=2, role=users]]
+2022-06-04 23:01:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=robertjames, password=password, firstName=robert, lastName=james, email=rj@gmail.com, userRole=UserRoles [id=2, role=user]]
+>>>>>>> 30f674fbb4961c5213f807163ab3594180bef777

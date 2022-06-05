@@ -44,7 +44,7 @@ public class HabitatTypeTest {
 		Mockito.when(typeRepo.findAll()).thenReturn(mockDB);
 		Mockito.when(typeRepo.save(type)).thenReturn(type);
 		Mockito.when(typeRepo.update(updateHType.getName(), updateHType.getId())).thenReturn(true);
-//		Mockito.when(typeRepo.update(notAType.getName(), updateHType.getId())).thenReturn(false);
+		Mockito.when(typeRepo.update(notAType.getName(), updateHType.getId())).thenReturn(false);
 		Mockito.when(typeRepo.delete(type.getId())).thenReturn(true);
 		Mockito.when(typeRepo.delete(notAType.getId())).thenReturn(false);
 	}
@@ -74,10 +74,10 @@ public class HabitatTypeTest {
 		assertEquals(true, service.updateType(updateHType));
 	}
 	
-//	@Test
-//	public void updateBadData() {
-//		assertEquals(false, service.updateType(notAType));
-//	}
+	@Test
+	public void updateBadData() {
+		assertEquals(false, service.updateType(notAType));
+	}
 	
 	@Test
 	public void deleteType() {
