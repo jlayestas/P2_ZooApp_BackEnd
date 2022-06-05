@@ -16,6 +16,7 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -32,7 +33,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zoo.controller.AnimalsController;
 import com.zoo.models.Animals;
 import com.zoo.models.HabitatType;
+import com.zoo.repositories.AnimalsRepository;
 import com.zoo.services.AnimalsService;
+import com.zoo.services.AnimalsServiceImpl;
 import com.zoo.util.ClientMessageUtil;
 
 @ExtendWith(SpringExtension.class)
