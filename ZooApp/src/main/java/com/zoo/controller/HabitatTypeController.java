@@ -31,6 +31,8 @@ import io.swagger.annotations.ApiOperation;
 @Api(value= "HabitatTypeRestController", description = "REST controller related to Habitat Type Enteties")
 public class HabitatTypeController {
 	
+	private static final ClientMessage UPDATE_SUCCESSFUL = null;
+
 	private static Logger log = Logger.getLogger(HabitatTypeController.class);
 	
 	@Autowired
@@ -75,7 +77,7 @@ public class HabitatTypeController {
 	public @ResponseBody ClientMessage editHabitatType(@RequestBody HabitatType name) {
 		
 		log.info("update habitat type " + name);
-		return typev.updateType(name) ? CREATION_SUCCESSFUL : CREATION_FAILED;
+		return typev.updateType(name) ? UPDATE_SUCCESSFUL : CREATION_FAILED;
 	}
 	
 	@DeleteMapping("/DeleteType")

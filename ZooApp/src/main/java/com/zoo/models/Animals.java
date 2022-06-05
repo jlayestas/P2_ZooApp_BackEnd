@@ -54,46 +54,55 @@ public class Animals {
 		this.habitatType = habitatType;
 	}
 
-
 	public int getId() {
 		return id;
 	}
+
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
+
 	public String getName() {
 		return name;
 	}
+
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public HabitatType getHabitatId() {
-		return habitatType;
-	}
-
-	public void setHabitatId(HabitatType habitatId) {
-		this.habitatType = habitatId;
-	}
 
 	public double getLifespan() {
 		return lifespan;
 	}
 
+
 	public void setLifespan(double lifespan) {
 		this.lifespan = lifespan;
 	}
+
 
 	public String getDiet() {
 		return diet;
 	}
 
+
 	public void setDiet(String diet) {
 		this.diet = diet;
 	}
+
+
+	public HabitatType getHabitatType() {
+		return habitatType;
+	}
+
+
+	public void setHabitatType(HabitatType habitatType) {
+		this.habitatType = habitatType;
+	}
+
 
 	@Override
 	public int hashCode() {

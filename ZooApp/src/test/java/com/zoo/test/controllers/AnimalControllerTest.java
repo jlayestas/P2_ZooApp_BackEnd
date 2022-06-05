@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
@@ -73,6 +74,7 @@ public class AnimalControllerTest {
 		return valid;
 	}
 	
+	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		System.out.println("setUpBeforeClass() :: building test objects...");
 		mockAnimal1 = new Animals(1, "Dragon", 100.00 ,"Canivore", new HabitatType(1, "Dungeon"));
