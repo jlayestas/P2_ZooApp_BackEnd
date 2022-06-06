@@ -10,6 +10,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - cd ZooApp/
+      - ls
       - mvn install
   post_build:
     commands:
