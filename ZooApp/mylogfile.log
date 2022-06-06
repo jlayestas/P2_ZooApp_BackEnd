@@ -1,0 +1,1129 @@
+2022-05-26 13:27:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-26 13:48:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-26 13:49:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-05-29 21:01:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:32:06 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:33:10 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:37:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 02:42:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-30 10:23:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-05-30 15:25:58 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:25:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-05-30 15:30:58 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:30:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-05-30 15:31:00 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:31:00 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-05-30 15:31:00 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:31:00 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-05-30 15:31:37 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:31:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=manager]
+2022-05-30 15:32:07 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:32:07 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=manager]
+2022-05-30 15:32:08 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:32:08 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=manager]
+2022-05-30 15:32:13 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 15:32:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=man]
+2022-05-30 16:46:42 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 16:46:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=0, role=manager]
+2022-05-30 16:48:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 16:49:40 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 16:57:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 16:58:21 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 16:59:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=manee]
+2022-05-30 17:01:47 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=manee]
+2022-05-30 17:03:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=manee]
+2022-05-30 17:04:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=manee]
+2022-05-30 17:06:53 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=manee]
+2022-05-30 17:16:22 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 17:16:38 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 17:20:00 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 17:20:29 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=manre]
+2022-05-30 17:21:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=man]
+2022-05-30 17:21:43 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=man]
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 17:28:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 17:28:41 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 17:28:41 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 17:28:41 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-05-30 17:28:41 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 17:28:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 17:28:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 17:28:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 17:29:01 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=man]
+2022-05-30 17:31:36 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=man]
+2022-05-30 17:32:57 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=man]
+2022-05-30 17:35:34 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=man]
+2022-05-30 17:36:49 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=man]
+2022-05-30 17:39:09 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=manager]
+2022-05-30 17:39:45 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=manager]
+2022-05-30 17:40:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=manager]
+2022-05-30 17:41:43 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=manager]
+2022-05-30 21:57:02 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-05-30 21:57:02 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-05-30 21:57:48 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 21:59:23 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=use]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-05-30 22:04:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+<<<<<<< HEAD
+2022-06-01 10:08:47 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-01 10:08:47 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-06-01 14:29:01 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-01 14:29:01 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=manager]
+2022-06-01 14:50:56 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...
+=======
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-01 00:10:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-01 00:10:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-06-01 00:10:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-01 00:10:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-01 00:11:52 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-01 00:12:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+<<<<<<< HEAD
+2022-06-02 14:14:08 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=null]
+2022-06-02 14:27:45 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=null]
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: 1
+2022-06-02 15:00:26 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: 1
+2022-06-02 15:09:35 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=0, username=null, password=null, firstName=null, lastName=null, email=null, userRole=null]
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-02 15:16:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-02 15:17:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-02 15:17:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-02 15:17:12 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+=======
+2022-05-31 23:28:11 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-05-31 23:28:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=null, lifespan=50.0, diet=carnivore]
+2022-05-31 23:40:22 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-05-31 23:40:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=HabitatType [id=5, name=null], lifespan=50.0, diet=carnivore]
+2022-05-31 23:40:33 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-05-31 23:40:33 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=HabitatType [id=3, name=null], lifespan=50.0, diet=carnivore]
+2022-05-31 23:40:56 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-05-31 23:40:56 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=null, lifespan=50.0, diet=carnivore]
+2022-05-31 23:44:32 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-05-31 23:44:32 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=null, lifespan=50.0, diet=carnivore]
+2022-05-31 23:47:59 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-05-31 23:47:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Zebra, habitatId=null, lifespan=50.0, diet=carnivore]
+2022-06-01 12:48:46 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 12:48:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Zebra, habitatId=null, lifespan=50.0, diet=carnivore]
+2022-06-01 13:16:07 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 13:16:07 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Zebra, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 13:27:42 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 13:27:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Panther, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 13:32:47 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 13:32:47 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Panther, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 13:37:52 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 13:37:52 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Panther, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 13:46:16 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 13:46:17 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Panther, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:03:07 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:03:09 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Panther, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:34:51 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:34:51 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Panther, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:38:48 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:38:48 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:41:02 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:41:02 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:41:49 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:41:49 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:47:01 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:47:01 INFO [com.zoo.controller.AnimalsController]: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:47:01 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:49:10 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:49:10 INFO [com.zoo.controller.AnimalsController]: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:49:10 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:53:14 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 14:53:14 INFO [com.zoo.controller.AnimalsController]: 
+2022-06-01 14:53:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 14:59:38 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...HabitatType [id=3, name=Africa]
+2022-06-01 15:00:16 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 15:00:16 INFO [com.zoo.controller.AnimalsController]: 
+2022-06-01 15:00:16 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 15:56:37 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 15:56:37 INFO [com.zoo.controller.AnimalsController]: 
+2022-06-01 15:56:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-01 16:02:04 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-01 16:02:04 INFO [com.zoo.controller.AnimalsController]: 
+2022-06-01 16:02:04 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Monkey, lifespan=50.0, diet=carnivore, habitatType=null]
+2022-06-02 08:12:21 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 08:12:21 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=0, name=Jungle]
+2022-06-02 08:12:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=0, name=Jungle]]
+2022-06-02 08:14:45 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 08:14:45 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=0, name=Jungle]
+2022-06-02 08:14:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=0, name=Jungle]]
+2022-06-02 08:16:47 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 08:16:47 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=3, name=Africa]
+2022-06-02 08:16:47 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=3, name=Africa]]
+2022-06-02 08:18:52 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...HabitatType [id=3, name=Africa]
+2022-06-02 08:19:24 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 08:19:24 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=1, name=Africa]
+2022-06-02 08:19:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=1, name=Africa]]
+2022-06-02 08:43:06 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:51:28 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:51:33 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:51:33 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:51:56 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:51:56 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:51:56 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:53:58 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:53:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:53:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:54:28 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:54:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:54:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:54:58 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:54:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:54:59 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:55:38 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:55:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:55:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:57:46 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 08:57:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 08:57:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 10:13:05 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 10:13:10 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 10:13:10 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 10:14:00 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 10:14:00 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 10:14:00 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 10:14:23 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:27:54 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:44:30 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:44:30 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:44:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:49:40 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:49:40 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:49:40 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:49:53 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:49:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:49:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:55:00 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:55:00 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:55:00 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:58:24 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:58:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:58:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:58:56 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 13:58:56 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 13:58:56 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 14:05:14 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 14:05:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+<<<<<<< HEAD
+2022-06-02 14:40:16 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 14:40:16 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 14:40:46 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 14:40:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 14:40:56 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 14:40:56 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:03:11 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 15:03:11 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=1, name=Africa]
+2022-06-02 15:03:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, lifespan=30.0, diet=Herbivore, habitatType=HabitatType [id=1, name=Africa]]
+2022-06-02 15:04:07 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 15:04:07 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=1, name=null]
+2022-06-02 15:04:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, lifespan=30.0, diet=Herbivore, habitatType=HabitatType [id=1, name=null]]
+2022-06-02 15:05:01 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...HabitatType [id=0, name=Sahara]
+2022-06-02 15:05:23 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...HabitatType [id=0, name=Africa]
+2022-06-02 15:05:38 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 15:05:38 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=1, name=null]
+2022-06-02 15:05:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, lifespan=30.0, diet=Herbivore, habitatType=HabitatType [id=1, name=null]]
+2022-06-02 15:09:23 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:09:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:09:37 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 15:09:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:09:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:12:39 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 15:13:35 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 15:13:35 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=2, name=null]
+2022-06-02 15:13:35 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=2, name=Lion, lifespan=30.0, diet=Carnivore, habitatType=HabitatType [id=2, name=null]]
+2022-06-02 15:13:40 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:13:40 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:14:13 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:14:13 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:16:12 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:16:12 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:16:18 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:16:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:16:30 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:16:30 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:17:00 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-02 15:17:00 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=1, name=Zebra, lifespan=30.0, diet=Herbivore, habitatType=HabitatType [id=1, name=null]]
+2022-06-02 15:17:10 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:17:10 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:31:52 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-02 15:31:52 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:32:57 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-02 15:32:57 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Zebra, lifespan=30.0, diet=Carnivore, habitatType=HabitatType [id=2, name=null]]
+>>>>>>> 46038b935e254524060eee7af6ffde2a82897cfe
+2022-06-03 15:31:09 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 15:37:14 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#1 to: User [userId=1, username=username, password=password, firstName=pat, lastName=miller, email=pat@gmail.com, userRole=UserRoles [id=1, role=user]]
+2022-06-03 15:48:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=pat, lastName=miller, email=pat@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 15:49:25 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-03 15:49:25 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-06-03 15:49:52 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=pat, lastName=miller, email=pat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-03 15:52:46 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-03 16:09:14 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-03 16:09:22 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-03 16:11:38 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#1 to: User [userId=1, username=username, password=password, firstName=patel, lastName=Dhruv, email=patel@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-03 16:14:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#1 to: User [userId=1, username=username, password=password, firstName=patel, lastName=Dhruv, email=patel@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-03 16:16:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#1 to: User [userId=1, username=username, password=password, firstName=patel, lastName=Dhruv, email=patel@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-03 16:17:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#1 to: User [userId=1, username=username, password=password, firstName=patel, lastName=Dhruv, email=patel@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-03 16:18:34 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 16:18:34 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+=======
+>>>>>>> fcfd87062526af7c87f9ef8a7bf30785795ae7fa
+2022-06-02 15:54:42 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=null]
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, lifespan=40.0, diet=Herbivore, habitatType=HabitatType [id=3, name=Sub Africa]]
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=2, name=South America]]
+2022-06-02 15:59:25 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=2, name=South America]]
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, lifespan=40.0, diet=Herbivore, habitatType=HabitatType [id=3, name=Sub Africa]]
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=2, name=South America]]
+2022-06-02 15:59:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=2, name=South America]]
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-02 15:59:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-02 15:59:46 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-03 11:44:15 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 11:45:01 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=null]]
+2022-06-03 11:57:41 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-03 11:57:41 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=users]
+2022-06-03 12:00:33 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-03 12:00:33 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=manager]
+2022-06-03 12:00:49 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 12:18:28 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-03 12:18:28 INFO [com.zoo.controller.AnimalsController]: HabitatType [id=1, name=Africa]
+2022-06-03 12:18:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, lifespan=50.0, diet=Carnivore, habitatType=HabitatType [id=1, name=Africa]]
+=======
+>>>>>>> 8d0b1dc21fc509fa2a301863708570963ebbafb5
+<<<<<<< HEAD
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-01 21:43:13 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-02 16:17:17 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-02 16:17:17 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=0, role=manager]
+2022-06-02 16:19:38 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-02 16:19:38 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-02 16:22:25 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-02 16:22:25 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=manager]
+2022-06-02 16:23:18 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-02 16:23:18 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+=======
+2022-06-02 09:36:57 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 09:37:25 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 09:37:36 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 09:37:59 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 09:38:15 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...
+2022-06-02 09:38:47 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 14:38:16 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 14:41:31 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=1, name=America]
+2022-06-02 14:42:01 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-02 14:42:01 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=manager]
+2022-06-02 14:45:18 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=1, name=South]
+2022-06-02 14:46:01 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=1, name=manager]
+2022-06-02 14:48:08 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=1, name=manager]
+2022-06-02 14:48:31 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=1, name=Europe]
+2022-06-02 14:53:20 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 14:53:35 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 14:57:32 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-02 14:57:32 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-02 14:59:35 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-02 14:59:35 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-02 15:08:57 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=1, name=Europe]
+2022-06-02 15:15:49 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-02 15:16:34 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-02 15:18:18 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-02 15:40:06 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 15:40:06 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=null, lifespan=50.0, diet=Carnivore]
+2022-06-02 15:45:10 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 15:45:10 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 15:53:39 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...
+2022-06-02 15:53:56 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-02 15:54:17 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-02 15:55:15 INFO [com.zoo.controller.HabitatTypeController]: creating new habitatType in controller...
+2022-06-02 15:55:31 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-02 15:55:50 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-02 16:04:01 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 16:04:01 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=2, name=Lepord, habitatId=null, lifespan=40.0, diet=Carnivore]
+2022-06-02 16:04:08 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 16:04:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-02 16:04:15 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 16:04:15 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 16:06:51 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-02 16:06:51 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=2, name=Lepord, habitatId=HabitatType [id=2, name=Asia], lifespan=40.0, diet=Carnivore]
+2022-06-02 16:06:58 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-02 16:06:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-02 16:09:06 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=2, name=Europe]
+2022-06-02 16:13:13 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=2, name=Europe]
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-06-02 16:23:18 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by name: Lion
+2022-06-03 11:49:32 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameAsia
+2022-06-03 11:56:13 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-03 11:58:07 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameEurope
+>>>>>>> 9d26276e437812ef7034fd30db9fc2d904deb238
+2022-06-03 13:37:11 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameAfrica
+2022-06-03 13:38:27 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-03 13:38:27 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=1, name=Lion, habitatId=null, lifespan=50.0, diet=Carnivore]
+2022-06-03 14:35:04 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 14:35:59 INFO [com.zoo.controller.UserRoleController]: creating user role
+2022-06-03 14:35:59 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=1, role=manager]
+2022-06-03 14:36:02 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=WSmith, password=passeword, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 14:39:45 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 14:41:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 14:48:06 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-03 15:07:31 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 15:08:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=UserRoles [id=1, role=manager]]
+2022-06-03 15:08:25 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-03 15:08:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-03 15:40:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 15:41:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 15:41:53 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-03 15:42:01 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 16:20:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 16:20:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-03 16:23:13 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+>>>>>>> 50e2b7be182a71c73d312f3f40058689bf8cca4e
+<<<<<<< HEAD
+2022-06-04 09:43:03 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=dhruv, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 09:44:06 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=raool, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 09:56:30 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=username, password=password, firstName=Amazon, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 09:56:49 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=Amazon, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:04:49 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=Dhruv, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:08:05 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=1, username=username, password=password, firstName=Eric, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:08:38 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=username, password=password, firstName=Dev, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 10:29:56 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devpit, password=password, firstName=Dev, lastName=pit, email=dhrpat@gmail.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 13:39:24 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devp, password=pass, firstName=null, lastName=null, email=devp@gmail.com, userRole=null]
+2022-06-04 13:58:08 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devp, password=pat, firstName=null, lastName=null, email=dp@gmail.com, userRole=null]
+2022-06-04 19:50:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=dhruv, password=patel, firstName=null, lastName=null, email=dppp@gmail.com, userRole=null]
+2022-06-04 20:02:12 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=dev, password=pass, firstName=null, lastName=null, email=devp@gamil.com, userRole=UserRoles [id=2, role=user]]
+2022-06-04 20:06:12 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=dhruv, password=pass, firstName=dhruv, lastName=patel, email=dp@gmail.com, userRole=UserRoles [id=2, role=user]]
+=======
+2022-06-04 13:34:30 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-04 13:34:30 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-04 13:34:39 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 13:36:38 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 13:42:57 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithpasseword
+2022-06-04 13:43:09 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-04 13:43:47 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-04 13:45:03 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#0 to: User [userId=0, username=MLuffy, password=Passeword, firstName=Monkey, lastName=Luffy, email=MLuffy@gmail.com, userRole=null]
+2022-06-04 14:39:32 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 14:39:32 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 14:48:22 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-04 14:48:22 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 14:50:59 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-04 14:50:59 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 15:31:30 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 15:31:30 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 15:31:30 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 15:35:01 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 15:35:01 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 15:35:01 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 15:36:57 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 15:36:57 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 15:36:57 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 15:37:30 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 15:37:30 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 15:37:30 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 15:38:14 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 15:38:14 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 15:38:14 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 16:27:16 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 16:27:16 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 16:27:16 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 16:27:16 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:28:37 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:28:41 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-04 16:28:42 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 16:28:43 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 16:28:43 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 16:28:43 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 16:28:43 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 16:28:44 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 16:28:44 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 16:28:44 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:28:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 16:28:44 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-04 16:28:54 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:33:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:33:47 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-04 16:33:47 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 16:33:49 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 16:33:49 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 16:33:49 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 16:33:49 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 16:33:50 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 16:33:50 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 16:33:50 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:33:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 16:33:51 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-04 16:33:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+<<<<<<< HEAD
+2022-06-04 22:58:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 22:58:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 22:58:47 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-04 22:58:47 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 22:58:48 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 22:58:48 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 22:58:48 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 22:58:48 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 22:58:50 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 22:58:50 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 22:58:50 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 22:58:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 22:58:50 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-04 22:58:58 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 23:53:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 23:53:43 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-04 23:53:43 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-04 23:53:43 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-04 23:53:43 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-04 23:53:43 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-04 23:53:44 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 23:53:44 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 23:53:44 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 23:53:44 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 23:53:45 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 23:53:45 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 23:53:45 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 23:53:45 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 23:53:46 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-04 23:53:55 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:01:18 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:01:24 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 10:01:25 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 10:01:25 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 10:01:25 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 10:01:25 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 10:01:26 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 10:01:26 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 10:01:26 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 10:01:26 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-05 10:01:28 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-05 10:01:28 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-05 10:01:28 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:01:28 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 10:01:28 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-05 10:01:42 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-05 10:09:00 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 10:09:00 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 10:09:00 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 10:09:00 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:11:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:11:16 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 10:11:16 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 10:11:16 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 10:11:16 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 10:11:16 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 10:11:18 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 10:11:18 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 10:11:18 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 10:11:18 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-05 10:11:21 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-05 10:11:21 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-05 10:11:21 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:11:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 10:11:22 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-05 10:11:37 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-05 10:16:40 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-05 10:16:40 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-05 10:16:40 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:17:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:17:35 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 10:17:35 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 10:17:35 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 10:17:35 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 10:17:35 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 10:17:38 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 10:17:38 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 10:17:38 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 10:17:38 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-05 10:17:42 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-05 10:17:42 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-05 10:17:42 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:17:42 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 10:17:43 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-05 10:18:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+=======
+>>>>>>> e54698ae81304f9a967c015aea62704baa99ba5f
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-04 21:34:29 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-04 21:34:58 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-04 22:59:16 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=devpit, password=pass, firstName=dev1, lastName=pit, email=devpit@gamil.com, userRole=UserRoles [id=2, role=users]]
+2022-06-04 23:01:17 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=0, username=robertjames, password=password, firstName=robert, lastName=james, email=rj@gmail.com, userRole=UserRoles [id=2, role=user]]
+<<<<<<< HEAD
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 09:55:11 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-05 09:55:11 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:55:11 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:55:17 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 09:55:17 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 09:55:17 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 09:55:17 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-05 09:55:18 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-05 09:55:18 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-05 09:55:18 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-05 09:55:18 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 09:55:18 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 09:55:18 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 09:55:18 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 09:55:18 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:57:53 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:57:56 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 09:57:56 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 09:57:56 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 09:57:56 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 09:57:56 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 09:57:57 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 09:57:57 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 09:57:57 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 09:57:57 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+2022-06-05 09:57:58 INFO [com.zoo.controller.UserRoleController]: getting all user roles
+2022-06-05 09:57:58 INFO [com.zoo.controller.UserRoleController]: updating a user role
+2022-06-05 09:57:58 INFO [com.zoo.controller.UserRoleController]: deleting a user role
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=3, name=Zebra, habitatId=HabitatType [id=3, name=Sub Africa], lifespan=40.0, diet=Herbivore]
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:57:58 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Jorge, habitatId=HabitatType [id=2, name=South America], lifespan=50.0, diet=Carnivore]
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to create new user: User [userId=3, username=AHeard, password=PooOnBed, firstName=Amber, lastName=Heard, email=AHeard@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 1
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find username by id#: 2
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to update user id#2 to: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to delete user: User [userId=2, username=AHeard, password=PassWord, firstName=Will, lastName=Smith, email=WSmith@gmail.com, userRole=UserRoles [id=2, role=visitor]]
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: CRockpassWord
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to login user: WSmithPassWord
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 09:57:58 INFO [com.zoo.services.UserServiceImpl]: In service layer, trying to find animal by id: 1
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 3 to: UserRoles [id=3, role=Bad Data]
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find all roles
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 1 to: UserRoles [id=1, role=m]
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=3, role=Bad Data]
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to update user role id# 2 to: UserRoles [id=2, role=u]
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 2
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=1, role=manager]
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to find role by id: 3
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to create new user role: UserRoles [id=2, role=user]
+2022-06-05 09:58:03 INFO [com.zoo.services.UserRolesServicesImpl]: In service layer, trying to delete user role: UserRoles [id=2, role=user]
+2022-06-05 10:04:25 INFO [com.zoo.controller.HabitatTypeController]: finding habitat type by name in controller...
+2022-06-05 10:04:25 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 10:04:25 INFO [com.zoo.controller.HabitatTypeController]: update habitat type HabitatType [id=0, name=South America]
+2022-06-05 10:04:25 INFO [com.zoo.controller.HabitatTypeController]: deleting an habitat type in controller...
+=======
+>>>>>>> 30f674fbb4961c5213f807163ab3594180bef777
+>>>>>>> c84c1f504810acfa43513ca55f2959ff42368e56
+2022-06-05 13:40:08 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 13:40:08 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=0, name=Lion, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:40:23 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameAfrica
+2022-06-05 13:40:27 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 13:40:27 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=0, name=Lion, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:40:31 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:40:31 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:40:38 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 13:40:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 13:40:41 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 13:40:41 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 13:40:44 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 13:40:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 13:41:01 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 13:41:01 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=1, name=Lion, habitatType=HabitatType [id=1, name=Africa], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:41:20 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 13:41:20 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=1, name=Lion, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:41:35 INFO [com.zoo.controller.AnimalsController]: updating an animal in controller...
+2022-06-05 13:41:35 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, updating an animal: Animals [id=2, name=Monkey, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:41:38 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 13:41:38 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:2
+2022-06-05 13:41:40 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 13:41:40 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=1, name=Zebra, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Herbivore]
+2022-06-05 13:41:44 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:41:44 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:41:48 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 13:41:48 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=1, name=Zebra, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Herbivore]
+2022-06-05 13:41:50 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:41:50 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:42:23 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:42:23 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:43:05 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:43:05 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:44:05 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 13:44:05 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=1, name=Monkey, habitatType=HabitatType [id=1, name=null], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:44:09 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:44:09 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:45:01 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:45:01 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:45:21 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:45:21 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 13:45:32 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 13:45:32 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=2, name=Monkey, habitatType=HabitatType [id=1, name=Africa], lifespan=30.0, diet=Carnivore]
+2022-06-05 13:45:43 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 13:45:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 16:38:00 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 16:38:00 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 16:39:50 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameEurope
+2022-06-05 16:40:24 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 16:40:31 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameLatin America
+2022-06-05 16:40:34 INFO [com.zoo.controller.HabitatTypeController]: creating new type nameAfrica
+2022-06-05 16:40:36 INFO [com.zoo.controller.HabitatTypeController]: looking up all habitatTypes in controller...
+2022-06-05 16:41:43 INFO [com.zoo.controller.AnimalsController]: creating a new animal in controller...
+2022-06-05 16:41:43 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, creating a new animal: Animals [id=0, name=Zebra, habitatType=HabitatType [id=2, name=null], lifespan=30.0, diet=herbivore]
+2022-06-05 16:42:40 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 16:42:40 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
+2022-06-05 16:42:52 INFO [com.zoo.controller.AnimalsController]: finding animal by Id in controller...
+2022-06-05 16:42:52 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting animal by id:1
+2022-06-05 16:43:19 INFO [com.zoo.controller.AnimalsController]: deleting an animal in controller...
+2022-06-05 16:43:19 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, deleting an animal: Animals [id=1, name=Zebra, habitatType=HabitatType [id=2, name=Latin America], lifespan=30.0, diet=herbivore]
+2022-06-05 16:43:24 INFO [com.zoo.controller.AnimalsController]: looking up list of animals in controller...
+2022-06-05 16:43:24 INFO [com.zoo.services.AnimalsServiceImpl]: In service layer, getting list of all Animals
