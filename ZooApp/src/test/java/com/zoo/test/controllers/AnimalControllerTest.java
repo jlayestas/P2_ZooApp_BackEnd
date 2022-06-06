@@ -114,7 +114,7 @@ public class AnimalControllerTest {
 		when(aserv.createAnimal(mockAnimalCreation)).thenReturn(true);
 		
 		//act
-		RequestBuilder request = MockMvcRequestBuilders.post("/api/animals")
+		RequestBuilder request = MockMvcRequestBuilders.post("/api/animalsnew")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
 				.content(om.writeValueAsString(mockAnimalCreation))
 				.contentType(MediaType.APPLICATION_JSON);
@@ -128,7 +128,7 @@ public class AnimalControllerTest {
 	@DisplayName("3. Get Animal by ID - Happy Path Scenerio Test")
 	public void testGetAnimalById() throws Exception {
 		when(aserv.getAnimalsById(1)).thenReturn(mockAnimal1);
-		RequestBuilder request = MockMvcRequestBuilders.get("/api/id?id=1");
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/animalsid?id=1");
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(mockAnimal1), result.getResponse().getContentAsString());
 	}
@@ -138,7 +138,7 @@ public class AnimalControllerTest {
 	@DisplayName("4. Get All Animals - Happy Path Scenerio Test")
 	public void testGetAllAnimals() throws Exception {
 		when(aserv.getAllAnimals()).thenReturn(dummyDb);
-		RequestBuilder request = MockMvcRequestBuilders.get("/api/animals");
+		RequestBuilder request = MockMvcRequestBuilders.get("/api/animalsall");
 		MvcResult result = mockmvc.perform(request).andReturn();
 		assertEquals(om.writeValueAsString(dummyDb), result.getResponse().getContentAsString());
 	}
@@ -149,7 +149,7 @@ public class AnimalControllerTest {
 	// @Disabled("Disabled until CreateCandyTest is up!")
 	public void testUpdateAnimal() throws Exception {
 		when(aserv.updateAnimals(mockAnimalModification)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.put("/api/animals")
+		RequestBuilder request = MockMvcRequestBuilders.put("/api/animalsupdate")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
 				.content(om.writeValueAsString(mockAnimalModification))
 				.contentType(MediaType.APPLICATION_JSON);
@@ -163,7 +163,7 @@ public class AnimalControllerTest {
 	@DisplayName("6. Delete Animal - Happy Path Scenerio Test")
 	public void testDeleteAnimal() throws Exception {
 		when(aserv.deleteAnimals(mockAnimalDeletion)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.delete("/api/animals")
+		RequestBuilder request = MockMvcRequestBuilders.delete("/api/animalsdelete")
 				.accept(MediaType.APPLICATION_JSON_VALUE)
 				.content(om.writeValueAsString(mockAnimalDeletion))
 				.contentType(MediaType.APPLICATION_JSON);
