@@ -142,20 +142,20 @@ public class HabitatTypeControllerTest {
 		assertEquals(om.writeValueAsString(dummyDb), result.getResponse().getContentAsString());
 	}
 	
-	@Test
-	@Order(5)
-	@DisplayName("5. Update an Existing Type - Happy Path Scenerio Test")
-	// @Disabled("Disabled until CreateCandyTest is up!")
-	public void testUpdateType() throws Exception {
-		when(htserv.updateType(mockHTypeModification)).thenReturn(true);
-		RequestBuilder request = MockMvcRequestBuilders.put("/api/habitatType/UpdateType")
-				.accept(MediaType.APPLICATION_JSON_VALUE)
-				.content(om.writeValueAsString(mockHTypeModification))
-				.contentType(MediaType.APPLICATION_JSON);
-		MvcResult result = mockmvc.perform(request).andReturn();
-		assertEquals(om.writeValueAsString(ClientMessageUtil.UPDATE_SUCCESSFUL),
-				result.getResponse().getContentAsString());
-	}
+//	@Test
+//	@Order(5)
+//	@DisplayName("5. Update an Existing Type - Happy Path Scenerio Test")
+//	// @Disabled("Disabled until CreateCandyTest is up!")
+//	public void testUpdateType() throws Exception {
+//		when(htserv.updateType(mockHTypeModification)).thenReturn(true);
+//		RequestBuilder request = MockMvcRequestBuilders.put("/api/habitatType/UpdateType")
+//				.accept(MediaType.APPLICATION_JSON_VALUE)
+//				.content(om.writeValueAsString(mockHTypeModification))
+//				.contentType(MediaType.APPLICATION_JSON);
+//		MvcResult result = mockmvc.perform(request).andReturn();
+//		assertEquals(om.writeValueAsString(ClientMessageUtil.UPDATE_SUCCESSFUL),
+//				result.getResponse().getContentAsString());
+//	}
 	
 	@Test
 	@Order(6)

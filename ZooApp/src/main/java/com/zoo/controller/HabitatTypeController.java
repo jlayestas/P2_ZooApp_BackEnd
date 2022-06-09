@@ -11,6 +11,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,6 +29,7 @@ import com.zoo.services.HabitatTypeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
+@CrossOrigin(origins ="*")
 @RestController
 @RequestMapping("/api/habitatType")
 @Api(value= "HabitatTypeRestController", description = "REST controller related to Habitat Type Enteties")
@@ -79,11 +81,11 @@ public class HabitatTypeController {
 	public @ResponseBody ClientMessage editHabitatType(@RequestBody HabitatType name) {
 		
 		log.info("update habitat type " + name);
-<<<<<<< HEAD
-		return typev.updateType(name) ? UPDATE_SUCCESSFUL : CREATION_FAILED;
-=======
+//<<<<<<< HEAD
+//		return typev.updateType(name) ? UPDATE_SUCCESSFUL : CREATION_FAILED;
+//=======
 		return typev.updateType(name) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
->>>>>>> c84c1f504810acfa43513ca55f2959ff42368e56
+
 	}
 	
 	@DeleteMapping("/DeleteType")
