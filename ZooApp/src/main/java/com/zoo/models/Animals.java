@@ -126,7 +126,7 @@ public class Animals {
 	@Override
 	public String toString() {
 		
-		return "Animals [id=" + id + ", name=" + name + ", habitatId=" + habitatType + ", lifespan=" + lifespan
+		return "Animals [id=" + id + ", name=" + name + ", habitatType=" + habitatType + ", lifespan=" + lifespan
 				+ ", diet=" + diet + "]";
 	}
 	

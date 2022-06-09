@@ -81,10 +81,14 @@ public class HabitatTypeController {
 	public @ResponseBody ClientMessage editHabitatType(@RequestBody HabitatType name) {
 		
 		log.info("update habitat type " + name);
+<<<<<<< HEAD
 //<<<<<<< HEAD
 //		return typev.updateType(name) ? UPDATE_SUCCESSFUL : CREATION_FAILED;
 //=======
 		return typev.updateType(name) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
+=======
+		return typev.updateType(name) ? UPDATE_SUCCESSFUL : CREATION_FAILED;
+>>>>>>> bbd18991d1925e9638d1e9b32bd21ba02ddee947
 
 	}
 	
